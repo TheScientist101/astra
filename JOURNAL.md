@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-* TheScientist101: 3
-* grimsteel:  3
+* TheScientist101: 6.5
+* grimsteel:  6.5
 
 # May 23rd:
 
@@ -31,4 +31,19 @@ This is what we spent the majority of the time figuring out, but we learned a lo
 
 We decided on an initial BOM, which is included in our [Full planning document](./PLANNING.md)
 
+# June 4th:
 
+TheScientist101 + grimsteel
+
+**Hours spent: 3.5 each (huddle)**
+
+We did extensive research into components and created a more thorough [BOM](./BOM.md)
+- We decided to use an STM32H7 microcontroller because of it's increased processing capabilities compared to the ESP32 and its compatibility with camera protocols, specifically DCMI.
+- We decided on a brushless motor and propellers to allow us a total weight of 80 grams.
+- We picked a camera model and did some research into the supporting components.
+- We did some initial calculations regarding the weight of the drone components using [ecalc](https://ecalc.ch).
+- We did some research on batteries, but that honestly bamboozled us more, so the battery is very much TBD.
+
+We also decided to deprioritize laser tag, instead focusing on a modular design.
+
+We are approaching our budget pretty quickly... We must keep in mind the cost of iterations and small things such as solder stencil.
