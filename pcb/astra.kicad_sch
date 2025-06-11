@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c0be3de2-9de4-4447-aa6f-537ea5f31aac")
+	(paper "A4")
+	(title_block
+		(title "Astra")
+		(company "TheScientist101 and grimsteel")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
