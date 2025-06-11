@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 11
-- grimsteel: 11
+- TheScientist101: 12
+- grimsteel: 12
 
 # May 23rd:
 
@@ -72,7 +72,22 @@ TheScientist101 + grimsteel
 **Hours spent: 2 each (huddle)**
 
 We started the initial schematic design
+
 - We created multiple subsheets to make collaboration easier (and to reduce merge conflicts)
 - We did some initial wiring for the STM32, flash, and power supply
 
 ![STM32 Schematic](./assets/initial-schematic-stm32.png)
+
+# June 11th
+
+TheScientist101 + grimsteel
+
+**Hours spent: 1 each (huddle)**
+
+We continued the schematic design
+
+- We added more power stuff for the STM32.
+- We looked more into STM32 datasheet to figure out what was needed and what capacitor values to use.
+- Throughout the day, we did some research into other drone projects to see how they did their schematics and what components they used. (not logged for time, but thought this was worth mentioning)
+
+![STM32 Schematic](./assets/day-2-schematic-stm32.png)
