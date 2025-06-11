@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 9
-- grimsteel: 9
+- TheScientist101: 11
+- grimsteel: 11
 
 # May 23rd:
 
@@ -64,3 +64,15 @@ We finished up our component research. ([BOM](./BOM.md))
 - We made a rough sketch of the device, which is shown below:
 
 ![Sketch](./assets/initial_sketch.png)
+
+# June 10th
+
+TheScientist101 + grimsteel
+
+**Hours spent: 2 each (huddle)**
+
+We started the initial schematic design
+- We created multiple subsheets to make collaboration easier (and to reduce merge conflicts)
+- We did some initial wiring for the STM32, flash, and power supply
+
+![STM32 Schematic](./assets/initial-schematic-stm32.png)

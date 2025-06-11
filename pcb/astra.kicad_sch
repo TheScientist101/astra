@@ -52,48 +52,6 @@
 		)
 	)
 	(sheet
-		(at 119.38 17.78)
-		(size 25.4 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3255a907-c056-442f-831b-a07578d6d1e9")
-		(property "Sheetname" "Motor Controller2"
-			(at 119.38 17.0684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "motor-controller.kicad_sch"
-			(at 119.38 33.6046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "astra"
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 17.78 45.72)
 		(size 25.4 17.78)
 		(exclude_from_sim no)
@@ -136,48 +94,6 @@
 		)
 	)
 	(sheet
-		(at 83.82 17.78)
-		(size 25.4 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "88b05d68-08a7-4f5b-97b7-be8adffa5d00")
-		(property "Sheetname" "Motor Controller1"
-			(at 83.82 17.0684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "motor-controller.kicad_sch"
-			(at 83.82 33.6046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "astra"
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 50.8 17.78)
 		(size 25.4 15.24)
 		(exclude_from_sim no)
@@ -215,48 +131,6 @@
 			(project "astra"
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 154.94 17.78)
-		(size 25.4 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b3fb98df-392d-49fe-a778-9c7b160709b1")
-		(property "Sheetname" "Motor Controller3"
-			(at 154.94 17.0684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "motor-controller.kicad_sch"
-			(at 154.94 33.6046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "astra"
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac"
-					(page "6")
 				)
 			)
 		)
