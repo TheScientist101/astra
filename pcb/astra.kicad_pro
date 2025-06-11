@@ -411,6 +411,30 @@
     [
       "c0be3de2-9de4-4447-aa6f-537ea5f31aac",
       "Root"
+    ],
+    [
+      "0c8c942c-f992-4664-b7a3-b87cb51e1584",
+      "MCU"
+    ],
+    [
+      "91998897-ec5d-48d5-9630-10203f145e94",
+      "Motor Controller"
+    ],
+    [
+      "88b05d68-08a7-4f5b-97b7-be8adffa5d00",
+      "Motor Controller1"
+    ],
+    [
+      "3255a907-c056-442f-831b-a07578d6d1e9",
+      "Motor Controller2"
+    ],
+    [
+      "b3fb98df-392d-49fe-a778-9c7b160709b1",
+      "Motor Controller3"
+    ],
+    [
+      "5769dfd4-1776-46f1-bc37-9888cb2fbb2b",
+      "Camera"
     ]
   ],
   "text_variables": {}
