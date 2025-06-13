@@ -106,4 +106,4 @@ We continued the schematic design
 - He researched which transceiver to use for the drone. We decided to use the NRF24L01+ transceiver because of its low cost and good range.
 - He started wiring the transceiver to the STM32.
 
-![Peripherals Schematic](./assets/day-3-schematic-peripherals.png)
+![Peripherals Schematic](./assets/day-3-schematic-peripherals.png) ![MCU Schematic](./assets/day-3-schematic-mcu.png) ![Motor Controller Schematic](./assets/day-3-schematic-motor.png)
