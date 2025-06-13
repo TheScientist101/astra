@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 12
-- grimsteel: 12
+- TheScientist101: 14
+- grimsteel: 14
 
 # May 23rd:
 
