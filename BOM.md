@@ -23,6 +23,7 @@
 | 1.5V LDO                              | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_MSKSEMI-TLV74315PDBVR-MS_C30197476.html?s_z=n_TLV74315)                     | 1        | $0.09                   | -                   |
 | Camera connector                      |                                                                                                                                                                              | 1        |                         | -                   |
 | TLV1117LV-3.3 | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV1117LV33DCYR_C15578.html?s_z=n_TLV1117) | 1 |  $0.84 (for 5) | - |
+| FCM1608KF-601T05 Ferrite Beads | [LCSC](https://www.lcsc.com/product-detail/Ferrite-Beads_TAI-TECH-FCM1608KF-601T05_C133937.html?s_z=n_ferrite%2520beads) | 1 | $0.18 (50 ct) | - | 
 
 > Target weight: **30g**
 

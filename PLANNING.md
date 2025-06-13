@@ -66,3 +66,5 @@ Remember to 2x everything at the end
 * https://www.unmannedsystemstechnology.com/feature/calculating-how-much-weight-a-drone-can-carry/
 * https://www.digikey.com/en/maker/projects/a-step-by-step-guide-to-build-a-low-cost-drone-using-esp32/8afccd0690574bcebfa0d2ad6fd0a391
 
+
+Measuring battery level: https://vivonomicon.com/2019/10/15/reading-battery-voltage-with-the-stm32s-adc/
