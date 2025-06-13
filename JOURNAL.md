@@ -91,3 +91,19 @@ We continued the schematic design
 - Throughout the day, we did some research into other drone projects to see how they did their schematics and what components they used. (not logged for time, but thought this was worth mentioning)
 
 ![STM32 Schematic](./assets/day-2-schematic-stm32.png)
+
+# June 12th
+
+TheScientist101 + grimsteel
+**Hours spent: 2 each (huddle)**
+
+We continued the schematic design
+
+- Siddhant worked on the motor control MOSFET things.
+- He researched which MOSFETs were capable of handling the current and voltage we needed.
+- He researched better voltage regulators.
+- Urjith finished up the basic STM32 wiring.
+- He researched which transceiver to use for the drone. We decided to use the NRF24L01+ transceiver because of its low cost and good range.
+- He started wiring the transceiver to the STM32.
+
+![Peripherals Schematic](./assets/day-3-schematic-peripherals.png)
