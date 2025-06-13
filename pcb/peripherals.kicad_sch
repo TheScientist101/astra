@@ -524,9 +524,53 @@
 			(embedded_fonts no)
 		)
 	)
-	(global_label "MOSI"
+	(rectangle
+		(start 82.55 17.78)
+		(end 139.7 66.04)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 632784d2-9d38-4107-8548-853d055febca)
+	)
+	(rectangle
+		(start 19.05 16.51)
+		(end 76.2 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e5208455-095a-42b3-88ec-59b42d1e75c6)
+	)
+	(text "Camera"
+		(exclude_from_sim no)
+		(at 84.836 15.494 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "152919a1-fded-4a62-8a94-5190b37d5e31")
+	)
+	(text "NRF Wireless Chip"
+		(exclude_from_sim no)
+		(at 27.94 15.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "771d1b59-5ead-47d7-8536-81ab4da81051")
+	)
+	(global_label "SPI1_CLK"
 		(shape input)
-		(at 66.04 35.56 180)
+		(at 33.02 36.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -534,9 +578,9 @@
 			)
 			(justify right)
 		)
-		(uuid "1d7c9328-9610-4175-b23b-d5b51a340ab3")
+		(uuid "91c61530-7bb0-4acd-990e-ff5b2998bab6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.4586 35.56 0)
+			(at 21.2053 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -546,9 +590,9 @@
 			)
 		)
 	)
-	(global_label "MISO"
+	(global_label "SPI1_MISO"
 		(shape input)
-		(at 66.04 38.1 180)
+		(at 33.02 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -556,9 +600,9 @@
 			)
 			(justify right)
 		)
-		(uuid "3b5a177e-37ff-4203-a42e-a20563f0ec95")
+		(uuid "a474987e-f0dc-43ed-baa4-b312131781a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.4586 38.1 0)
+			(at 20.1772 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -568,9 +612,9 @@
 			)
 		)
 	)
-	(global_label "SCK"
+	(global_label "NRF_CS"
 		(shape input)
-		(at 66.04 40.64 180)
+		(at 33.02 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -578,9 +622,31 @@
 			)
 			(justify right)
 		)
-		(uuid "e3622124-4edb-42fd-95bd-bef69948dabf")
+		(uuid "b7e98cfc-0e64-40f3-b607-d642324d020e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.3053 40.64 0)
+			(at 22.8986 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SPI1_MOSI"
+		(shape input)
+		(at 33.02 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e359f079-9cbc-43a1-843d-9ea5928616d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.1772 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -592,7 +658,7 @@
 	)
 	(symbol
 		(lib_id "RF:NRF24L01_Breakout")
-		(at 78.74 43.18 0)
+		(at 45.72 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -601,7 +667,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f1a6e6c-386a-4622-8d73-f12ad56d8c98")
 		(property "Reference" "U4"
-			(at 88.9 41.9099 0)
+			(at 55.88 38.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -610,7 +676,7 @@
 			)
 		)
 		(property "Value" "NRF24L01_Breakout"
-			(at 88.9 44.4499 0)
+			(at 55.88 40.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -619,7 +685,7 @@
 			)
 		)
 		(property "Footprint" "RF_Module:nRF24L01_Breakout"
-			(at 82.55 27.94 0)
+			(at 49.53 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -630,7 +696,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf"
-			(at 78.74 45.72 0)
+			(at 45.72 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -639,7 +705,7 @@
 			)
 		)
 		(property "Description" "Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
-			(at 78.74 43.18 0)
+			(at 45.72 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -682,7 +748,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 78.74 27.94 0)
+		(at 45.72 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -691,7 +757,7 @@
 		(fields_autoplaced yes)
 		(uuid "815a1562-33d5-410a-8409-cab1fb9cadcd")
 		(property "Reference" "#PWR022"
-			(at 78.74 31.75 0)
+			(at 45.72 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -700,7 +766,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 78.74 22.86 0)
+			(at 45.72 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -708,7 +774,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 27.94 0)
+			(at 45.72 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -717,7 +783,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 27.94 0)
+			(at 45.72 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -726,7 +792,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 78.74 27.94 0)
+			(at 45.72 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -748,7 +814,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 58.42 0)
+		(at 45.72 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -757,7 +823,7 @@
 		(fields_autoplaced yes)
 		(uuid "815aa400-a1ec-404a-83ea-2b0ff2326d5e")
 		(property "Reference" "#PWR021"
-			(at 78.74 64.77 0)
+			(at 45.72 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -766,7 +832,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.74 63.5 0)
+			(at 45.72 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -774,7 +840,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 58.42 0)
+			(at 45.72 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -783,7 +849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 58.42 0)
+			(at 45.72 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -792,7 +858,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 78.74 58.42 0)
+			(at 45.72 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

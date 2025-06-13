@@ -22,6 +22,7 @@
 | 2.8V LDO                              | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV74328PDBVR_C408971.html?s_z=n_TLV74328)                | 1        | $0.05                   | -                   |
 | 1.5V LDO                              | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_MSKSEMI-TLV74315PDBVR-MS_C30197476.html?s_z=n_TLV74315)                     | 1        | $0.09                   | -                   |
 | Camera connector                      |                                                                                                                                                                              | 1        |                         | -                   |
+| TLV1117LV-3.3 | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV1117LV33DCYR_C15578.html?s_z=n_TLV1117) | 1 |  $0.84 (for 5) | - |
 
 > Target weight: **30g**
 
@@ -29,7 +30,6 @@
 
 | Item                    | Quantity | Total Mass on Drone |
 | ----------------------- | -------- | ------------------- |
-| 3.3V LDO                | 1        | -                   |
 | Pin headers             | -        | -                   |
 | 2 pin JST-2.0 connector | 5        | -                   |
 

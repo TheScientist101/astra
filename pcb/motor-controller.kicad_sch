@@ -5,145 +5,6 @@
 	(uuid "2d8c48d8-0319-41d5-897a-1163756f237a")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -620,7 +481,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:AO3401A"
+		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(hide yes)
 			)
@@ -636,7 +497,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "AO3401A"
+			(property "Value" "AO3400A"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -656,7 +517,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -666,7 +527,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -675,7 +536,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "P-Channel MOSFET"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -693,7 +554,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AO3401A_0_1"
+			(symbol "AO3400A_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -732,18 +593,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0.762 0.508) (xy 0.762 -0.508)
 					)
 					(stroke
@@ -766,6 +615,30 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(circle
 					(center 1.651 0)
 					(radius 2.794)
@@ -775,18 +648,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(polyline
@@ -837,7 +698,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -849,7 +710,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -860,7 +721,7 @@
 					)
 				)
 			)
-			(symbol "AO3401A_1_1"
+			(symbol "AO3400A_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1146,8 +1007,20 @@
 		)
 	)
 	(rectangle
+		(start 13.97 69.85)
+		(end 67.31 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4ca486a3-1500-452d-9e44-939f75a73852)
+	)
+	(rectangle
 		(start 13.97 16.51)
-		(end 87.63 64.77)
+		(end 67.31 64.77)
 		(stroke
 			(width 0)
 			(type default)
@@ -1156,6 +1029,52 @@
 			(type none)
 		)
 		(uuid 5ae6d9cd-ade8-4e9c-99bc-f47222e722d6)
+	)
+	(rectangle
+		(start 69.85 69.85)
+		(end 123.19 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 698bd17f-ad2d-46fd-8fa2-94be51aa93fe)
+	)
+	(rectangle
+		(start 69.85 16.51)
+		(end 123.19 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid afccea72-b20a-489c-80a4-e50369d88543)
+	)
+	(text "Pulldown"
+		(exclude_from_sim no)
+		(at 35.306 113.284 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+		)
+		(uuid "020211af-6d05-4ca7-b3fc-7fa7b2dd9a59")
+	)
+	(text "Motor 2 (NE)"
+		(exclude_from_sim no)
+		(at 76.2 15.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "230e15d1-3be5-4fae-a022-7c2e1f02c1fc")
 	)
 	(text "Flyback Diode"
 		(exclude_from_sim no)
@@ -1168,16 +1087,27 @@
 		)
 		(uuid "3f64f38d-f366-40ad-ac65-27251948beea")
 	)
-	(text "Smoothing Cap\n"
+	(text "Pulldown"
 		(exclude_from_sim no)
-		(at 78.994 38.608 0)
+		(at 91.186 113.284 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(color 194 0 194 1)
 			)
 		)
-		(uuid "415b3351-5d9b-43d4-a049-2c7c6f9096fb")
+		(uuid "55507b7b-7914-4178-a26d-5ea6a1f59a0a")
+	)
+	(text "Flyback Diode"
+		(exclude_from_sim no)
+		(at 32.258 91.694 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+		)
+		(uuid "6a30cc49-0022-4fc8-897f-30601c1df0a9")
 	)
 	(text "Motor 1 (NW)"
 		(exclude_from_sim no)
@@ -1185,10 +1115,54 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 194 1)
+				(color 255 255 255 1)
 			)
 		)
 		(uuid "6fa95f8a-5ca5-411c-902b-1b6724bbb4d9")
+	)
+	(text "Motor 3 (SW)"
+		(exclude_from_sim no)
+		(at 20.32 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "82fdbf4d-8cdd-4262-a23d-fef3106253d6")
+	)
+	(text "Motor 4 (SE)"
+		(exclude_from_sim no)
+		(at 76.2 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "a7e3946f-b77e-4340-8ff1-0353622f9aa8")
+	)
+	(text "Flyback Diode"
+		(exclude_from_sim no)
+		(at 88.138 91.694 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+		)
+		(uuid "d82b2a63-1e01-4dcc-b559-ce5a0ab09f09")
+	)
+	(text "Pulldown"
+		(exclude_from_sim no)
+		(at 91.186 59.944 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+		)
+		(uuid "d9657160-c257-413d-afad-1c4592295f85")
 	)
 	(text "Pulldown"
 		(exclude_from_sim no)
@@ -1201,11 +1175,64 @@
 		)
 		(uuid "f4906798-e57c-40a6-82d7-7c9748b8c686")
 	)
+	(text "Flyback Diode"
+		(exclude_from_sim no)
+		(at 88.138 38.354 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+		)
+		(uuid "f65752fa-daba-4c6d-ba58-9c3fac4c0df7")
+	)
+	(junction
+		(at 105.41 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20fac963-3348-4c7b-9a9d-081644258928")
+	)
+	(junction
+		(at 105.41 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25779e99-3e5b-4f27-9b08-eda3ac275640")
+	)
+	(junction
+		(at 49.53 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27579452-4120-4c11-be7e-b3011e3bae69")
+	)
+	(junction
+		(at 49.53 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3706d8c0-0df7-40d3-9fd7-5416db4043ca")
+	)
+	(junction
+		(at 33.02 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4324fef8-c28e-4904-990b-6786c55aabbf")
+	)
 	(junction
 		(at 49.53 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5fbd4fa7-47b1-461a-906d-c4bf63c80114")
+	)
+	(junction
+		(at 88.9 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "677f8d1e-13bc-4dbb-9b13-59f93a35953b")
+	)
+	(junction
+		(at 105.41 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bc23ca1-28f2-43fb-9586-e9442bac63f4")
 	)
 	(junction
 		(at 33.02 49.53)
@@ -1214,16 +1241,56 @@
 		(uuid "72a351d4-9b32-4377-9a03-2a13620763f6")
 	)
 	(junction
+		(at 105.41 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76bad15b-80a0-46eb-936a-b091c6686093")
+	)
+	(junction
+		(at 105.41 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93c2d6bd-aa8c-4989-b147-34be35a5d014")
+	)
+	(junction
 		(at 49.53 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96a87930-2fd9-4e51-addc-db95c815db44")
 	)
 	(junction
+		(at 105.41 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d72f0a2-b85f-482a-a573-3608471ae6e5")
+	)
+	(junction
+		(at 49.53 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a16b2390-b428-4af9-8050-0954f70d871f")
+	)
+	(junction
+		(at 88.9 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb3f5122-73a1-46ac-8b0c-04f8bc88c221")
+	)
+	(junction
 		(at 49.53 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edbb049d-e54c-4800-b10e-91a0df8e0936")
+	)
+	(wire
+		(pts
+			(xy 105.41 81.28) (xy 97.79 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031ce14f-2874-413d-8e44-3dcc5375c820")
 	)
 	(wire
 		(pts
@@ -1237,6 +1304,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 77.47) (xy 49.53 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0547100d-48a4-4daa-9b70-231c52c571a4")
+	)
+	(wire
+		(pts
 			(xy 49.53 27.94) (xy 41.91 27.94)
 		)
 		(stroke
@@ -1244,6 +1321,86 @@
 			(type default)
 		)
 		(uuid "05d4116f-6309-4aa7-8918-30302cd153a3")
+	)
+	(wire
+		(pts
+			(xy 88.9 102.87) (xy 90.17 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e048fd-7492-46e1-ae80-1734a4482128")
+	)
+	(wire
+		(pts
+			(xy 88.9 109.22) (xy 95.25 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f52e45b-0f72-4ed9-9149-a2e125e2d287")
+	)
+	(wire
+		(pts
+			(xy 88.9 55.88) (xy 88.9 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16bc1f34-ffcb-497b-8841-3e932dba1358")
+	)
+	(wire
+		(pts
+			(xy 49.53 93.98) (xy 49.53 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181f12e3-4cb0-403a-adb4-b46210776ca7")
+	)
+	(wire
+		(pts
+			(xy 82.55 102.87) (xy 88.9 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f445bd2-056a-4e24-b80e-175c0b1e79de")
+	)
+	(wire
+		(pts
+			(xy 97.79 27.94) (xy 97.79 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25847aeb-f6b1-4b59-ad79-5d4d77744742")
+	)
+	(wire
+		(pts
+			(xy 49.53 81.28) (xy 41.91 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "286b13ff-531d-4300-9eda-f89356d0902b")
+	)
+	(wire
+		(pts
+			(xy 82.55 49.53) (xy 88.9 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b37e89d-eb05-4f25-afda-ef3d2ad90642")
 	)
 	(wire
 		(pts
@@ -1267,6 +1424,96 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 81.28) (xy 97.79 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f07f19c-1618-40eb-a4ce-2f81496cdfb7")
+	)
+	(wire
+		(pts
+			(xy 105.41 24.13) (xy 105.41 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f1de19-6b21-4d58-8d65-80d5e0e0c1dd")
+	)
+	(wire
+		(pts
+			(xy 41.91 95.25) (xy 49.53 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47858d92-4c7a-4145-9cdc-ac3e1d938f5e")
+	)
+	(wire
+		(pts
+			(xy 33.02 109.22) (xy 33.02 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fbe8f49-1cc1-4fc6-8e45-dadd229961d6")
+	)
+	(wire
+		(pts
+			(xy 41.91 91.44) (xy 41.91 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52f59608-1773-4565-a8c7-a8fccdc1b456")
+	)
+	(wire
+		(pts
+			(xy 88.9 55.88) (xy 95.25 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c213951-c30a-41c3-81a6-7c308fdb8d0a")
+	)
+	(wire
+		(pts
+			(xy 88.9 109.22) (xy 88.9 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c8af132-5739-4b60-9910-7905f65bf8f1")
+	)
+	(wire
+		(pts
+			(xy 49.53 95.25) (xy 49.53 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60208340-0b2c-46a7-aa95-06b53a05d560")
+	)
+	(wire
+		(pts
+			(xy 102.87 109.22) (xy 105.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60249eed-90c9-4879-b941-51103a6c5d0a")
+	)
+	(wire
+		(pts
 			(xy 33.02 55.88) (xy 33.02 49.53)
 		)
 		(stroke
@@ -1277,33 +1524,73 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 38.1) (xy 67.31 41.91)
+			(xy 105.41 55.88) (xy 105.41 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6165686d-c94c-43dd-8df3-4f9d2c7e2f58")
+		(uuid "6a8325e1-8454-4d5f-9676-f1e45cfc7b6c")
 	)
 	(wire
 		(pts
-			(xy 67.31 41.91) (xy 49.53 41.91)
+			(xy 105.41 77.47) (xy 105.41 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65ec0c55-c682-496f-a98d-e0382d67c792")
+		(uuid "70c4e289-178e-4be9-810c-abea2c0a629b")
 	)
 	(wire
 		(pts
-			(xy 67.31 27.94) (xy 67.31 30.48)
+			(xy 102.87 55.88) (xy 105.41 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "76b3216d-9164-434a-8679-aa9a552cd260")
+		(uuid "70e02c45-5337-46c5-8433-601888ca7bec")
+	)
+	(wire
+		(pts
+			(xy 105.41 27.94) (xy 97.79 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8209a127-cc07-4e52-9037-7732d6d94b06")
+	)
+	(wire
+		(pts
+			(xy 97.79 38.1) (xy 97.79 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "837459c0-e180-4799-a2e5-b763ad459e54")
+	)
+	(wire
+		(pts
+			(xy 26.67 102.87) (xy 33.02 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "861fab79-3a6e-4396-8954-cc90ed573eb7")
+	)
+	(wire
+		(pts
+			(xy 41.91 81.28) (xy 41.91 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88b41953-4447-4b25-9de5-8f9f74a77bbe")
 	)
 	(wire
 		(pts
@@ -1337,6 +1624,26 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 95.25) (xy 105.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91c9431c-2be7-4448-9398-a56c2dbbe49c")
+	)
+	(wire
+		(pts
+			(xy 105.41 41.91) (xy 105.41 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9471e8da-6830-4c27-a5a7-9ec0d2aa8265")
+	)
+	(wire
+		(pts
 			(xy 46.99 55.88) (xy 49.53 55.88)
 		)
 		(stroke
@@ -1344,6 +1651,16 @@
 			(type default)
 		)
 		(uuid "a1dbfee9-3d97-48dd-bd55-7fdb17915449")
+	)
+	(wire
+		(pts
+			(xy 97.79 91.44) (xy 97.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a53ea722-903c-48f8-a2f9-6eab08dda633")
 	)
 	(wire
 		(pts
@@ -1357,6 +1674,36 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 54.61) (xy 105.41 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac4af0d4-a2a1-4da4-9637-c9df1da9ff06")
+	)
+	(wire
+		(pts
+			(xy 49.53 109.22) (xy 49.53 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ace673f2-db17-4daf-87b5-d4e009d170e9")
+	)
+	(wire
+		(pts
+			(xy 105.41 107.95) (xy 105.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad305bd5-ae92-4488-a784-efbf1ee57f71")
+	)
+	(wire
+		(pts
 			(xy 26.67 49.53) (xy 33.02 49.53)
 		)
 		(stroke
@@ -1367,13 +1714,73 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 27.94) (xy 67.31 27.94)
+			(xy 105.41 93.98) (xy 105.41 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bab8aa4e-f2fc-459c-af71-e97d5a67d161")
+		(uuid "b44bd328-1391-46fd-b747-7e589fc3e639")
+	)
+	(wire
+		(pts
+			(xy 105.41 109.22) (xy 105.41 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b75e237b-7e43-44b6-964e-273005ab8aa1")
+	)
+	(wire
+		(pts
+			(xy 105.41 40.64) (xy 105.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8b26410-55ae-4245-a3b3-d972f3b4c844")
+	)
+	(wire
+		(pts
+			(xy 97.79 41.91) (xy 105.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be96e219-fdb3-48c8-924a-12479462d517")
+	)
+	(wire
+		(pts
+			(xy 46.99 109.22) (xy 49.53 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c04e3128-882b-46bd-9a70-f0a3896292f5")
+	)
+	(wire
+		(pts
+			(xy 33.02 109.22) (xy 39.37 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e4e764-19e6-43c9-a785-70cea2eda442")
+	)
+	(wire
+		(pts
+			(xy 49.53 107.95) (xy 49.53 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca494af0-f7cf-40fb-bfbd-7bf26fe9c1f8")
 	)
 	(wire
 		(pts
@@ -1387,6 +1794,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 95.25) (xy 105.41 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d41c4d4a-be1c-4311-a5ca-977788078388")
+	)
+	(wire
+		(pts
 			(xy 41.91 27.94) (xy 41.91 30.48)
 		)
 		(stroke
@@ -1394,6 +1811,26 @@
 			(type default)
 		)
 		(uuid "dffebd4e-960c-47b5-b866-7e0763c6e475")
+	)
+	(wire
+		(pts
+			(xy 88.9 49.53) (xy 90.17 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ead62876-8849-4d2e-9dda-549677022e47")
+	)
+	(wire
+		(pts
+			(xy 33.02 102.87) (xy 34.29 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc4dfbf-4fc4-45bb-868e-89ae9764a178")
 	)
 	(wire
 		(pts
@@ -1418,6 +1855,72 @@
 		(uuid "3a9a3038-bb92-41c1-9bd4-940ab34b3fc6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 16.1253 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOTOR4"
+		(shape input)
+		(at 82.55 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66747926-8d59-4c5f-9a87-3e1e51f95849")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.0053 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOTOR2"
+		(shape input)
+		(at 82.55 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a86e5db1-4367-4c15-982d-6464365fd877")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.0053 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOTOR3"
+		(shape input)
+		(at 26.67 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d95434ae-7d13-4aa8-ab22-ea9ecd3aecd2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.1253 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1581,6 +2084,434 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 49.53 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "031dd6c1-d8e0-46f9-9fdc-51d70994a75c")
+		(property "Reference" "#PWR023"
+			(at 49.53 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 49.53 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 49.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f91ea001-d247-4994-b6e1-54ea2cbab04a")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_DC")
+		(at 105.41 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a75f79f-5af7-4c54-b2de-4b1c4933b81c")
+		(property "Reference" "M4"
+			(at 110.49 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_DC"
+			(at 110.49 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 105.41 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Motor"
+			(at 105.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "55e0db49-b8cb-4d6c-baa6-c3137c07b3ea")
+		)
+		(pin "1"
+			(uuid "b5eed226-5b3d-46a7-9cd9-f09a4f27c569")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "M4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 102.87 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26d300d7-09ec-4f02-8ca3-23e9f53336ff")
+		(property "Reference" "Q4"
+			(at 109.22 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 109.22 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 107.95 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 107.95 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 102.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "75b44ed9-87df-442a-b722-5187c74d4ee6")
+		)
+		(pin "1"
+			(uuid "89adfb9c-afa1-4198-a0c5-91c1ccd844cd")
+		)
+		(pin "3"
+			(uuid "ac6aa5f3-aae1-4235-a9d7-4c6098be1bc4")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_DC")
+		(at 105.41 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c0b6e63-50bb-4f4a-a3d6-5a44e6998bcf")
+		(property "Reference" "M2"
+			(at 110.49 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_DC"
+			(at 110.49 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 105.41 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Motor"
+			(at 105.41 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "290e69db-95a7-474e-aee5-9abcaacbdd36")
+		)
+		(pin "1"
+			(uuid "f47406df-e450-47db-b405-2383426304b9")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_DC")
+		(at 49.53 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "336fbd4d-fbf0-457b-a0b6-437a29d289de")
+		(property "Reference" "M3"
+			(at 54.61 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_DC"
+			(at 54.61 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 49.53 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Motor"
+			(at 49.53 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d301f19-649d-45f9-9442-f2668aa245a6")
+		)
+		(pin "1"
+			(uuid "6291b75b-295f-479a-a692-d209323281c4")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "M3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 46.99 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34172023-e017-4c66-a1c9-9ecc866c9cfb")
+		(property "Reference" "Q3"
+			(at 53.34 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 53.34 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 52.07 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 52.07 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 46.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9fd9362-9ea5-4b32-9306-7f7509580170")
+		)
+		(pin "1"
+			(uuid "d1d31216-c1e6-4889-91dd-89ca53798664")
+		)
+		(pin "3"
+			(uuid "dc5ff06f-c1e4-4b7b-b9fd-5e9a6b462836")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_DC")
 		(at 49.53 33.02 0)
 		(unit 1)
@@ -1651,56 +2582,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:AO3401A")
-		(at 46.99 49.53 0)
+		(lib_id "power:GND")
+		(at 105.41 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "48fcf835-d5c4-4fd5-8981-c8c599182ef6")
-		(property "Reference" "Q1"
-			(at 53.34 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3401A"
-			(at 53.34 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 52.07 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
-			(at 52.07 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
-			(at 46.99 49.53 0)
+		(uuid "5077102d-86cc-4c1c-b9b6-e0be6b21c2e9")
+		(property "Reference" "#PWR022"
+			(at 105.41 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1708,19 +2600,247 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "fe95fe17-e879-40aa-9a2c-1f91d43766f9")
+		(property "Value" "GND"
+			(at 105.41 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "799ef694-054b-4933-a0ef-9e7d9e459cbf")
-		)
-		(pin "3"
-			(uuid "fbcab57b-692a-44c9-95c5-3c52749ad27e")
+			(uuid "9bdadf96-9ccb-4b01-b75b-5da3a5c97d1a")
 		)
 		(instances
-			(project ""
+			(project "astra"
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
-					(reference "Q1")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 105.41 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53f4f834-239c-4304-a937-096c7210a942")
+		(property "Reference" "#PWR025"
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 105.41 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 105.41 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2cd43e0-0174-4aba-91fb-f56ca09feeb1")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5474cc9e-80a2-4230-a439-c0fc22daa898")
+		(property "Reference" "#PWR026"
+			(at 105.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43fa257b-2253-4dd5-aec2-c44e557b4eb3")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 43.18 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b5e1ed1-4d91-4c22-b2fd-8e8ae7d014b0")
+		(property "Reference" "R7"
+			(at 43.18 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 43.18 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 110.998 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 43.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9544978-f049-4269-b6e4-ba8862da0284")
+		)
+		(pin "2"
+			(uuid "5da3b5e3-af63-40f1-b6ea-188a9a6cb1ab")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -1744,7 +2864,7 @@
 				)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "220"
 			(at 38.1 45.72 90)
 			(effects
 				(font
@@ -1795,44 +2915,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 67.31 34.29 0)
+		(lib_id "Diode:1N4148")
+		(at 97.79 34.29 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99e73346-86b0-44a1-87a8-cb48dcc4d4b8")
-		(property "Reference" "C9"
-			(at 71.12 33.0199 0)
+		(uuid "62767d31-f97f-42bd-9b28-61619b77f29c")
+		(property "Reference" "D3"
+			(at 95.25 35.5601 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100nF"
-			(at 71.12 35.5599 0)
+		(property "Value" "1N4148"
+			(at 95.25 33.0201 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 68.2752 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 34.29 0)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 97.79 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1840,8 +2950,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 67.31 34.29 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 97.79 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1850,15 +2987,610 @@
 			)
 		)
 		(pin "1"
-			(uuid "aab96233-e772-4dd0-8711-bd9e924c6472")
+			(uuid "644e80b4-8a21-4cf2-96bd-20fb1c5a9575")
 		)
 		(pin "2"
-			(uuid "735a921a-d40b-4f48-83e2-d00324630659")
+			(uuid "fe5bcf18-67bb-4254-933c-19e418ea2560")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 41.91 87.63 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "718521b0-9dea-4a00-a647-b7c8b86b3aaf")
+		(property "Reference" "D4"
+			(at 39.37 88.9001 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 39.37 86.3601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 41.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cba4eb92-3ced-4fde-b033-4c2ed4c3cfa0")
+		)
+		(pin "2"
+			(uuid "9d93aabf-1f42-4ada-b173-3edcfdfe72ee")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72df153a-0712-442f-a4dd-d6959299daf1")
+		(property "Reference" "R5"
+			(at 99.06 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 99.06 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 57.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 99.06 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a54e9cd8-3b2d-4cf8-afbe-3d66f136b543")
+		)
+		(pin "2"
+			(uuid "addd43d2-1d73-469d-a1df-86c9c4b1f916")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 105.41 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "883eb46e-26f1-4ae8-90b7-1f065d27906f")
+		(property "Reference" "#PWR021"
+			(at 105.41 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 105.41 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 105.41 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b5dc63c-af59-4404-b58c-7675da14518e")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 102.87 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97782acf-36ea-4e30-98e3-8006602493f0")
+		(property "Reference" "Q2"
+			(at 109.22 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 109.22 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 107.95 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 107.95 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 102.87 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8bae9db9-7e0f-417a-88f7-bd12720dc420")
+		)
+		(pin "1"
+			(uuid "c6c11055-4990-4bbe-bab4-81127d0a2229")
+		)
+		(pin "3"
+			(uuid "8f3ea77c-6a28-4b6e-9502-4c596277c555")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 49.53 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b543330-5a43-44d8-9499-d0182166be03")
+		(property "Reference" "R4"
+			(at 93.98 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 93.98 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 47.752 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fe9f246-c455-4758-b57c-6f20b2933fdf")
+		)
+		(pin "2"
+			(uuid "d9fbd576-0f7b-430f-825f-9a5844e330d3")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 46.99 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4c460f2-bd24-4b74-94a8-2742c725f4dd")
+		(property "Reference" "Q1"
+			(at 53.34 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 53.34 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 52.07 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 52.07 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 46.99 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c4d9d9e-3902-480d-8113-f2e7bcae7b23")
+		)
+		(pin "1"
+			(uuid "af096bba-b437-4eaf-879c-92611f8a12da")
+		)
+		(pin "3"
+			(uuid "5b7ca549-0050-461d-88f8-19d02e76d573")
 		)
 		(instances
 			(project ""
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
-					(reference "C9")
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 38.1 102.87 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7c5a1d5-9001-4ad1-a32f-94786820a16f")
+		(property "Reference" "R6"
+			(at 38.1 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 38.1 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f604caa-311b-4ab3-8d66-0c556b0c75bd")
+		)
+		(pin "2"
+			(uuid "d69aaf51-f330-4e80-82c2-86dfcc3416ea")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 97.79 87.63 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b979b8c8-7033-42a0-adb6-8d8e7da1e91a")
+		(property "Reference" "D5"
+			(at 95.25 88.9001 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 86.3601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 97.79 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 97.79 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 97.79 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 97.79 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 97.79 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a35a68e6-296a-41bc-80d9-3cb8789b5519")
+		)
+		(pin "2"
+			(uuid "d928d161-3059-4f86-934e-aa315a1d3407")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -1932,6 +3664,74 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 93.98 102.87 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0aef0ad-bd79-47e1-a52a-eaa87f861ced")
+		(property "Reference" "R8"
+			(at 93.98 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 93.98 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b582160-147f-47f4-8675-7514d45e5dfd")
+		)
+		(pin "2"
+			(uuid "c05200ab-9d27-4145-b2e3-3fb168b3d26b")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 43.18 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1992,6 +3792,139 @@
 			(project ""
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f769cb3f-f906-4ad5-86dc-e67372185bd6")
+		(property "Reference" "R9"
+			(at 99.06 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 99.06 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 110.998 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28f77f05-4b55-4cf3-b56f-dc7679866b34")
+		)
+		(pin "2"
+			(uuid "1780f864-6dd5-41d6-b731-ceb8e33f8313")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8f84433-8c9c-47bf-8fd1-1543bd227a1e")
+		(property "Reference" "#PWR024"
+			(at 49.53 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d518689c-307c-494d-82c3-642a13ec016f")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/91998897-ec5d-48d5-9630-10203f145e94"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
