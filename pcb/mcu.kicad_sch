@@ -6910,7 +6910,7 @@
 				)
 			)
 		)
-		(property "Value" "AMS1117-3.3"
+		(property "Value" "TLV1117LV33DCYR"
 			(at 162.56 22.86 0)
 			(effects
 				(font

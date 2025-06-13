@@ -66,8 +66,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "5769dfd4-1776-46f1-bc37-9888cb2fbb2b")
-		(property "Sheetname" "Camera"
+		(uuid "5121fc52-65c9-43af-86a0-4c1ef24f194e")
+		(property "Sheetname" "Peripherals"
 			(at 17.78 45.0084 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "camera.kicad_sch"
+		(property "Sheetfile" "peripherals.kicad_sch"
 			(at 17.78 64.0846 0)
 			(effects
 				(font
@@ -88,7 +88,7 @@
 		(instances
 			(project "astra"
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac"
-					(page "7")
+					(page "4")
 				)
 			)
 		)
