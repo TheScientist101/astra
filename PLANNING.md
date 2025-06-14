@@ -68,3 +68,5 @@ Remember to 2x everything at the end
 
 
 Measuring battery level: https://vivonomicon.com/2019/10/15/reading-battery-voltage-with-the-stm32s-adc/
+
+OV5640 wiring: https://cdn-learn.adafruit.com/assets/assets/000/118/304/original/adafruit_products_cam_schem.png?1675865865
