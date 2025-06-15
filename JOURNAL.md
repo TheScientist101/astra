@@ -8,7 +8,7 @@ created_at: "2025-05-23"
 ### Total hours:
 
 - TheScientist101: 14
-- grimsteel: 14
+- grimsteel: 19
 
 # May 23rd:
 
@@ -107,3 +107,40 @@ We continued the schematic design
 - He started wiring the transceiver to the STM32.
 
 ![Peripherals Schematic](./assets/day-3-schematic-peripherals.png) ![MCU Schematic](./assets/day-3-schematic-mcu.png) ![Motor Controller Schematic](./assets/day-3-schematic-motor.png)
+
+# June 13th-14th
+
+grimsteel
+
+**Hours spent: 5**
+
+I added almost all of the peripherals to the schematic:
+
+- **JTAG connector for debugging** - this one was relatively simple as it's just a bunch of connections
+- **NRF Wireless Chip** - Urjith had started this already, so I just finished the wiring. I decided to use the SPI2 peripheral instead of SPI1 (more on this below)
+- **OV5640 Camera** - This was definitely the most complex. The Adafruit breakout board for the OV5640 was a very helpful reference for figuring out the wiring and components/pullups needed. I had to use 2 additional LDOs as well. I connected this to the STM32's DCMI interface as well as the I2C1 peripheral.
+- **IMU** - This was relatively simple. I used a Sparkfun breakout board as a reference, and connected it to the I2C2 peripheral. I'm not sure whether multiple I2C subs can exist on the same peripheral, but we have enough pins on the STM32 to just use another.
+
+![Peripherals](./assets/day-5-peripherals.png)
+
+I also added a voltage divider to the battery so we can measure its voltage (using ADC1)
+
+![Battery](./assets/day-5-bat-vd.png)
+
+I decided to use an external 25 MHz crystal (recommended by the datasheet)
+
+![rocket](./assets/day-5-crystal.png)
+
+The hardest part of all of this was figuring out where to connect everything to the STM32. It's not like an ESP32 which has a GPIO matrix, which means there are specific pins for SPI and I2C and the other peripherals.
+
+The STM32CubeMX software was a huge help with this. It helped me pick which pins to use to avoid conflicts.
+
+![cube](./assets/day-5-stm-cube.png)
+
+With this configuration, SPI1 is actually unusable, which is why I used SPI2.
+
+Here's the resulting schematic:
+
+![mcu](./assets/day-5-mcu.png)
+
+I did end up altering some of the power circuitry again (ferrite bead between VDDA/VREF and +3.3V)
