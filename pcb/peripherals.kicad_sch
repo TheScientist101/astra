@@ -6689,7 +6689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_Module:nRF24L01_Breakout"
+		(property "Footprint" "lcsc:nRF24L01_SMD_Breakout"
 			(at 49.53 24.13 0)
 			(effects
 				(font
