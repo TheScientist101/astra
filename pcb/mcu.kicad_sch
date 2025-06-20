@@ -4911,7 +4911,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 255 1)
 			)
 		)
 		(uuid "03700944-0808-454b-9f21-d4937cafa8ef")
@@ -4922,7 +4921,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 255 1)
 			)
 		)
 		(uuid "153b5926-ef51-46a9-865e-a190715aee10")
@@ -4933,7 +4931,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 255 1)
 			)
 		)
 		(uuid "15ea9189-6230-4e3e-818e-521c15ab6f3b")
@@ -4974,7 +4971,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 255 1)
 			)
 			(justify left)
 		)
@@ -5045,7 +5041,6 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 255 1)
 			)
 		)
 		(uuid "ed7a052c-f2d9-4d9c-8e34-cb323fe1f4d6")
@@ -5963,6 +5958,28 @@
 		(uuid "0142569a-4cae-462d-bf76-e35c8a2d2c9d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 192.353 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS_SD"
+		(shape input)
+		(at 41.91 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "022d4ac2-8e5d-4fca-9132-6f711efde0a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.9982 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
