@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 14
-- grimsteel: 19
+- TheScientist101: 16
+- grimsteel: 21
 
 # May 23rd:
 
@@ -144,3 +144,18 @@ Here's the resulting schematic:
 ![mcu](./assets/day-5-mcu.png)
 
 I did end up altering some of the power circuitry again (ferrite bead between VDDA/VREF and +3.3V)
+
+# June 20th
+
+TheScientist101 + grimsteel
+**Hours spent: 2 each (huddle)**
+
+Siddhant started routing the PCB. He finalized the placement of most of the components and started routing the power traces. To improve signal quality, we decided to use four layers instead of two, and we will need to move the components around and re-route the PCB.
+
+![PCB Placement](./assets/day-6-routing.png)
+
+Urjith added the micro secure digital card interface socket connector to the schematic. We researched the microSD specification and the necessity for pull-up resistors on the data lines.
+
+![SD Card Schematic](./assets/day-6-sd-card.png)
+
+We still need to add a HAT interface connector socket for extensibility and modularity, but we will do that later.
