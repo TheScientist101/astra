@@ -8,7 +8,7 @@ created_at: "2025-05-23"
 ### Total hours:
 
 - TheScientist101: 16
-- grimsteel: 21
+- grimsteel: 26
 
 # May 23rd:
 
@@ -159,3 +159,27 @@ Urjith added the micro secure digital card interface socket connector to the sch
 ![SD Card Schematic](./assets/day-6-sd-card.png)
 
 We still need to add a HAT interface connector socket for extensibility and modularity, but we will do that later.
+
+# June 21st-30th
+
+grimsteel
+
+**Hours spent: 5**
+
+Both of us have been pretty busy this past week, but I've been gradually routing the new PCB.
+
+We switched to 4 layers for better signal quality and easier routing, so we had to pretty much start from scratch.
+
+![Routing](./assets/day-7-routing.png)
+
+Most of the routing is done, but we still need to do the last motor (figuring out where to place this will be hard) and a couple of the camera traces.
+
+The last step will be to connect all of the battery nets. This is going to be pretty difficult as the tracks for the motors need to be really thick:
+
+![Track Width](./assets/day-7-current.png)
+
+Routing them on the external layers would require only a 0.4mm wide track, but there's not really much space left there.
+
+The `In2.Cu` layer is _supposed_ to be for power, and this is where I'll probably end up routing them. The issue is that it's an internal layer, and the copper weight will be 0.5 oz/ft^2 (we could make it 1 oz, but we need to minimize weigh)
+
+2 layer PCBs can be under 100x100mm before JLCPCB starts getting super expensive, but the cutoff is 50x50mm for 4 layers. Thankfully, we're just under that right now.
