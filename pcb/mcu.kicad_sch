@@ -5094,12 +5094,6 @@
 		(uuid "2d500590-1f9b-4a1d-b79a-6748ddf88841")
 	)
 	(junction
-		(at 143.51 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37074240-d29c-4524-9bfc-bec5194cb785")
-	)
-	(junction
 		(at 157.48 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5914,16 +5908,6 @@
 			(type default)
 		)
 		(uuid "f97859bf-058f-4678-8818-2e1da1c1c459")
-	)
-	(wire
-		(pts
-			(xy 143.51 113.03) (xy 143.51 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "faeef1ba-6c72-4f09-9345-c93162e0714f")
 	)
 	(wire
 		(pts
@@ -9027,73 +9011,6 @@
 			(project "astra"
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/0c8c942c-f992-4664-b7a3-b87cb51e1584"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 143.51 115.57 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e3aea42-cf88-42af-826b-e4c3b6d131b7")
-		(property "Reference" "TP4"
-			(at 146.05 120.1421 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_BOOT"
-			(at 146.05 117.6021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 143.51 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf6606c4-67ef-4be2-a1db-85944c4aadc6")
-		)
-		(instances
-			(project "astra"
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/0c8c942c-f992-4664-b7a3-b87cb51e1584"
-					(reference "TP4")
 					(unit 1)
 				)
 			)

@@ -5846,7 +5846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lcsc:LGA-14_L3.0-W2.5-P0.50-BR"
+		(property "Footprint" "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm"
 			(at 43.18 148.59 0)
 			(effects
 				(font
@@ -6019,7 +6019,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 114.3 124.4599 0)
 			(effects
 				(font
@@ -6028,7 +6028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 109.982 123.19 90)
 			(effects
 				(font
@@ -6089,7 +6089,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 137.16 124.4599 0)
 			(effects
 				(font
@@ -6098,7 +6098,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 132.842 123.19 90)
 			(effects
 				(font
@@ -8287,7 +8287,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 129.54 124.4599 0)
 			(effects
 				(font
@@ -8296,7 +8296,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 125.222 123.19 90)
 			(effects
 				(font
@@ -9433,7 +9433,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d707d434-d42e-43d6-94e8-99c3bef96a38")
 		(property "Reference" "C32"
 			(at 130.81 129.54 90)
@@ -9451,7 +9451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 134.62 136.1948 0)
 			(effects
 				(font
@@ -9512,7 +9512,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 121.92 124.4599 0)
 			(effects
 				(font
@@ -9521,7 +9521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 117.602 123.19 90)
 			(effects
 				(font
