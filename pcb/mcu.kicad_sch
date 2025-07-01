@@ -4895,7 +4895,7 @@
 	)
 	(rectangle
 		(start 179.07 16.51)
-		(end 228.6 35.56)
+		(end 215.9 35.56)
 		(stroke
 			(width 0)
 			(type default)
@@ -5013,7 +5013,7 @@
 	)
 	(text "ADC1_INP4"
 		(exclude_from_sim no)
-		(at 89.916 139.7 0)
+		(at 104.14 142.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5230,14 +5230,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff56f58f-c730-43e6-bf70-4961c88252a6")
-	)
-	(no_connect
-		(at 251.46 -100.33)
-		(uuid "af9c44fc-1f6a-4732-9db8-3cdf42b5a1c7")
-	)
-	(no_connect
-		(at 213.36 25.4)
-		(uuid "ef3f4316-8725-413e-9ef2-42419aedc3e4")
 	)
 	(wire
 		(pts
@@ -5561,16 +5553,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 26.67) (xy 200.66 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bd4aa0c-898f-4431-9361-d8747c67541a")
-	)
-	(wire
-		(pts
 			(xy 124.46 100.33) (xy 124.46 95.25)
 		)
 		(stroke
@@ -5628,16 +5610,6 @@
 			(type default)
 		)
 		(uuid "a75e5124-9a83-45a3-b40e-3135b60480bd")
-	)
-	(wire
-		(pts
-			(xy 200.66 27.94) (xy 203.2 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8c482df-130b-43bd-9881-31b2099e0ac3")
 	)
 	(wire
 		(pts
@@ -6039,6 +6011,28 @@
 			)
 		)
 	)
+	(global_label "DDG_MAGIC_4"
+		(shape input)
+		(at 87.63 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "165dbaab-4df4-48c5-a0ad-6037d6317721")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2547 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FLASH_IO_1"
 		(shape input)
 		(at 130.81 66.04 180)
@@ -6118,6 +6112,28 @@
 		(uuid "1f5d20f1-c28e-486c-8ba7-61c3ee8b77c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 30.8815 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DCMI_RST"
+		(shape input)
+		(at 41.91 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "290a5e86-022c-4fb6-b3a1-b18bb8d0c4d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.9139 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6413,6 +6429,28 @@
 			)
 		)
 	)
+	(global_label "DCMI_PWDN"
+		(shape input)
+		(at 41.91 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59ae3a45-1e35-499b-aee6-e4ca65d50fe3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.0391 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOTOR4"
 		(shape input)
 		(at 87.63 73.66 0)
@@ -6426,6 +6464,28 @@
 		(uuid "5a8d640a-3956-41d9-a7bf-1e0b191b7ab7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 98.1747 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DDG_MAGIC_2"
+		(shape input)
+		(at 87.63 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5b718bf5-22fc-4451-89bf-d296d24c0597")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2547 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6699,24 +6759,24 @@
 			)
 		)
 	)
-	(global_label "DCMI_RST"
+	(global_label "DDG_MAGIC_1"
 		(shape input)
-		(at 41.91 149.86 180)
+		(at 87.63 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "9066cc44-f96a-48be-92da-3fb06f0cffd9")
+		(uuid "914dd41f-bff4-4eb1-b86e-fc644edb9f4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.9139 149.86 0)
+			(at 103.2547 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6897,6 +6957,28 @@
 			)
 		)
 	)
+	(global_label "DDG_MAGIC_5"
+		(shape input)
+		(at 87.63 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac575710-af60-4b6b-852d-d1f27444e1a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2547 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOTOR3"
 		(shape input)
 		(at 87.63 71.12 0)
@@ -7007,6 +7089,28 @@
 			)
 		)
 	)
+	(global_label "DDG_MAGIC_3"
+		(shape input)
+		(at 87.63 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca37f672-f860-46f3-8722-70c7819d72a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.2547 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "HSE_I"
 		(shape input)
 		(at 41.91 60.96 180)
@@ -7047,28 +7151,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DCMI_PWDN"
-		(shape input)
-		(at 41.91 147.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ddb5e857-4264-42d7-8481-342f828ab07d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.0391 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8418,16 +8500,15 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 213.36 30.48 270)
+		(at 200.66 26.67 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "53d3f6c9-a633-4e2a-ba32-0fd6904831bd")
 		(property "Reference" "#PWR06"
-			(at 209.55 30.48 0)
+			(at 200.66 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8436,16 +8517,15 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 217.17 30.4799 90)
+			(at 204.724 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 30.48 0)
+			(at 200.66 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8454,7 +8534,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 30.48 0)
+			(at 200.66 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8463,7 +8543,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 213.36 30.48 0)
+			(at 200.66 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9501,7 +9581,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8455ea8c-3c00-4d3e-91df-3a76acb55da2")
 		(property "Reference" "#PWR05"
 			(at 198.12 33.02 0)
@@ -9513,7 +9592,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 31.75 0)
+			(at 194.056 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9753,77 +9832,6 @@
 			(project "astra"
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/0c8c942c-f992-4664-b7a3-b87cb51e1584"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 208.28 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f72d20e-a757-40a7-964c-ea54ead0de57")
-		(property "Reference" "SW1"
-			(at 208.28 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 208.28 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
-			(at 208.28 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 208.28 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c87a3bec-36b8-40f3-ac95-98c02f8b80f3")
-		)
-		(pin "3"
-			(uuid "c3dfb282-0a86-469e-9355-57101bfe8483")
-		)
-		(pin "1"
-			(uuid "971a9c13-18a1-4933-9002-fcce17993791")
-		)
-		(instances
-			(project ""
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/0c8c942c-f992-4664-b7a3-b87cb51e1584"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
