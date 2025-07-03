@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 16
-- grimsteel: 26
+- TheScientist101: 18.5
+- grimsteel: 30.5
 
 # May 23rd:
 
@@ -183,3 +183,37 @@ Routing them on the external layers would require only a 0.4mm wide track, but t
 The `In2.Cu` layer is _supposed_ to be for power, and this is where I'll probably end up routing them. The issue is that it's an internal layer, and the copper weight will be 0.5 oz/ft^2 (we could make it 1 oz, but we need to minimize weigh)
 
 2 layer PCBs can be under 100x100mm before JLCPCB starts getting super expensive, but the cutoff is 50x50mm for 4 layers. Thankfully, we're just under that right now.
+
+# July 1st-2nd
+
+**Hours spent:**
+
+TheScientist101: 2.5 (huddle)
+
+grimsteel: 2.5 (huddle) + 2
+
+We decided to lock in and actually finish the PCB.
+
+The JTAG connector was taking up too much space, so Urjith invented the MONKE connector to solve this. (It's basically a rearranged JTAG connector without the duplicate GND/3.3V pins).
+
+![MONKE](assets/day-8-monke.png)
+
+He also added a DUCKDUCKGOOSE connector for extensibility and to allow the development of potential HATs for the drone. To save pins, it can be configured to either expose the SPI or the I2C pins with a DPDT switch.
+
+![DDG](assets/day-8-ddg.png)
+
+We also rearranged some of the MCU pins to make routing easier. We realized that using a dedicated 24Mhz crystal for the camera would be better than trying to use one of the MCU output crystals.
+
+![crystal](assets/day-8-dcmi-crystal.png)
+
+Urjith replaced the boot switch with a solder jumper to save space.
+
+![switches](assets/day-8-switches.png)
+
+He then placed all the new components on the PCB.
+
+After the huddle, Siddhant finished up the routing of the PCB. This involved moving the SD card and the NRF around to make routing easier.
+
+The power traces were all routed on the external layers with 2mm tracks to ensure they would be able to provide enough current to the motors.
+
+![pcb](assets/day-8-routing.png)
