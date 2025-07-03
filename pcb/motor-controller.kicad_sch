@@ -1204,7 +1204,7 @@
 		)
 		(uuid "020211af-6d05-4ca7-b3fc-7fa7b2dd9a59")
 	)
-	(text "Motor 2 (NE)"
+	(text "Motor 2 (SW)"
 		(exclude_from_sim no)
 		(at 88.9 15.24 0)
 		(effects
@@ -1248,7 +1248,7 @@
 		)
 		(uuid "6a30cc49-0022-4fc8-897f-30601c1df0a9")
 	)
-	(text "Motor 1 (NW)"
+	(text "Motor 1 (SE)"
 		(exclude_from_sim no)
 		(at 20.32 15.24 0)
 		(effects
@@ -1259,7 +1259,7 @@
 		)
 		(uuid "6fa95f8a-5ca5-411c-902b-1b6724bbb4d9")
 	)
-	(text "Motor 3 (SW)"
+	(text "Motor 3 (NE)"
 		(exclude_from_sim no)
 		(at 20.32 68.58 0)
 		(effects
@@ -1270,7 +1270,7 @@
 		)
 		(uuid "82fdbf4d-8cdd-4262-a23d-fef3106253d6")
 	)
-	(text "Motor 4 (SE)"
+	(text "Motor 4 (NW)"
 		(exclude_from_sim no)
 		(at 88.9 68.58 0)
 		(effects
