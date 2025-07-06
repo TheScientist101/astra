@@ -22,6 +22,7 @@ _Mass estimate is included in PCB mass estimate_
 | BMI270 IMU                          | [LCSC](https://www.lcsc.com/product-detail/Accelerometers_Bosch-Sensortec-BMI270_C2836813.html?s_z=n_BMI270)                                                  | 1        | $0.92 (other suppliers) |
 | STM32H750XBH6                       | [LCSC](https://www.lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_STMicroelectronics-STM32H750XBH6_C405932.html?s_z=n_STM32H7)                          | 1        | $7.06                   |
 | 25 MHz Crystal (optional, but good) | [LCSC](https://lcsc.com/product-detail/Crystals_Shenzhen-SCTF-Elec-SX3B25-000F1010F30_C2901684.html?s_z=n_25%2520MHz)                                         | 1        | $0.36 (5 ct)            |
+| OT322524MJBA4SL 24 MHz Crystal      | [LCSC](https://lcsc.com/product-detail/Crystal-Oscillators_YXC-Crystal-Oscillators-OT322524MJBA4SL_C717686.html?s_z=n_24MHz%25203.3V)                         | 1        | $0.55               |
 | 2.8V LDO                            | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV74328PDBVR_C408971.html?s_z=n_TLV74328) | 1        | $0.05                   |
 | 1.5V LDO                            | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_MSKSEMI-TLV74315PDBVR-MS_C30197476.html?s_z=n_TLV74315)      | 1        | $0.09                   |
 | 24 pin FPC Connector                | [LCSC](https://lcsc.com/product-detail/FFC-FPC-Flat-Flexible-Connector-Assemblies_JUSHUO-AFA07-S24FCA-00_C262726.html)                                        | 1        | $0.66 (5 ct)            |
@@ -40,6 +41,7 @@ _Mass estimate is included in PCB mass estimate_
 | 220 125mW 0805 Resistor             | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J221-TS_C2933537.html?s_z=n_100k)                                         | 4        | $0.13 (100 ct)          |
 | 2.2k 125mW 0805 Resistor            | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J222-TS_C2907303.html?s_z=n_100k)                                         | 2        | $0.13 (100 ct)          |
 | SD Card Socket                      | [LCSC](https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_HOAUC-HYCW110-TF10-180B_C2962030.html)                                                   | 1        | $0.54 (10 ct)           |
+| DPDT Switch |                        [LCSC](https://lcsc.com/product-detail/Slide-Switches_XKB-Connection-SS-3235S-L1_C500055.html?s_z=n_dpdt) | 1 | $0.52 |
 
 > Target weight: **50g**
 
@@ -49,7 +51,6 @@ _Mass estimate is included in PCB mass estimate_
 | ----------------------- | -------- | ------------------- |
 | Pin headers             | -        | -                   |
 | 2 pin JST-2.0 connector | 5        | -                   |
-| SPDT Switch             | 2        | -                   |
 
 <!--
 | ESP32-S3-WROOM-1U-N4 | [DigiKey](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1U-N4/16162640) [LCSC](https://www.aliexpress.us/item/3256806096656294.html) | 1 | $3.61 + $4.99 | - |
