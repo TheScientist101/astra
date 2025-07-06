@@ -1,7 +1,7 @@
 (footprint "XDCR_COM-09032"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -2.625 -15.235 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "1a56dd09-73cd-4518-adc4-e7e0b899ce85")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -239,7 +227,7 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "958068c9-d6eb-427e-8db1-3cfb2ee70bf9")
 	)
@@ -502,7 +490,7 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "1ae9f5f2-3e91-46aa-b400-0b094d184e11")
 	)
@@ -632,15 +620,16 @@
 		(solder_mask_margin 0.102)
 		(uuid "b20d96eb-c31d-46bb-b84f-bc5394587b6e")
 	)
-	(model "${KIPRJMOD}/libraries/digikey/COM-09032.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/stuff.3dshapes/COM-09032.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0.5 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )
