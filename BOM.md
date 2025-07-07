@@ -40,8 +40,11 @@ _Mass estimate is included in PCB mass estimate_
 | 10k 125mW 0805 Resistor             | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J103TS_C2930231.html?s_z=n_100k)                                          | 9        | $0.11 (100 ct)          |
 | 220 125mW 0805 Resistor             | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J221-TS_C2933537.html?s_z=n_100k)                                         | 4        | $0.13 (100 ct)          |
 | 2.2k 125mW 0805 Resistor            | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J222-TS_C2907303.html?s_z=n_100k)                                         | 2        | $0.13 (100 ct)          |
+| 1k 125mW 0805 Resistor | [LCSC](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J102-TS_C2907295.html?s_z=n_1k%2520resistor) | 1 | $0.13 (100 ct) |
+| 
 | SD Card Socket                      | [LCSC](https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_HOAUC-HYCW110-TF10-180B_C2962030.html)                                                   | 1        | $0.54 (10 ct)           |
 | DPDT Switch |                        [LCSC](https://lcsc.com/product-detail/Slide-Switches_XKB-Connection-SS-3235S-L1_C500055.html?s_z=n_dpdt) | 1 | $0.52 |
+| 0805 Green LED | [LCSC](https://lcsc.com/product-detail/LED-Indication-Discrete_Yongyu-Photoelectric-SZYY0805G1_C19712537.html) | 1 | $0.27 (50 ct) |
 
 > Target weight: **50g**
 

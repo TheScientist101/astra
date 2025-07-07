@@ -7193,6 +7193,28 @@
 			)
 		)
 	)
+	(global_label "STATUS_LED"
+		(shape input)
+		(at 87.63 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d37e950e-aca4-465e-9cde-076d853f946e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.8032 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DCMI_HSYNC"
 		(shape input)
 		(at 87.63 55.88 0)
