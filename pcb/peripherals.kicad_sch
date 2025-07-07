@@ -4325,7 +4325,7 @@
 	)
 	(rectangle
 		(start 165.1 100.33)
-		(end 205.74 115.57)
+		(end 208.28 125.73)
 		(stroke
 			(width 0)
 			(type default)
@@ -4436,7 +4436,7 @@
 		)
 		(uuid "93f875c8-f3ed-4127-97b0-76625e9a8d72")
 	)
-	(text "Status Light Emitting Diode"
+	(text "Status Light Emitting Diodes"
 		(exclude_from_sim no)
 		(at 178.308 98.806 0)
 		(effects
@@ -5665,7 +5665,7 @@
 			)
 		)
 	)
-	(global_label "STATUS_LED"
+	(global_label "STATUS_LED_1"
 		(shape input)
 		(at 190.5 110.49 0)
 		(fields_autoplaced yes)
@@ -5677,7 +5677,7 @@
 		)
 		(uuid "47dbef6e-8154-4ec5-94b5-47dcfe9282b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 204.6732 110.49 0)
+			(at 206.8503 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5876,6 +5876,28 @@
 		(uuid "77891036-2321-470b-8f01-a20522076a76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 109.9071 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "STATUS_LED_2"
+		(shape input)
+		(at 190.5 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "85fd6fbe-e1a6-4c50-8eef-8ce5a68cae00")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 206.8503 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6626,6 +6648,75 @@
 			(project "astra"
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 186.69 116.84 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0679f760-29bd-4e48-af64-b692587e1231")
+		(property "Reference" "R25"
+			(at 186.69 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 186.69 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 186.69 115.062 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 186.69 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5195f7f2-b1da-47ba-b85d-e838e2d9bc72")
+		)
+		(pin "2"
+			(uuid "fcbc3239-de01-4640-85d7-98a94d6eb2c6")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -7710,6 +7801,74 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 175.26 116.84 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "348f6b8d-a03a-4cf9-a01d-f3ebfc6acfe0")
+		(property "Reference" "#PWR083"
+			(at 168.91 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 116.8401 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe6750f6-a648-4ea8-a05d-02b5b0c26093")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 193.04 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8515,6 +8674,84 @@
 			(project ""
 				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 179.07 116.84 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58e7c494-a6ae-4104-9317-168b70ee73ac")
+		(property "Reference" "D6"
+			(at 177.4825 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 177.4825 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 179.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 179.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 179.07 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "62702c00-d09a-4870-af56-b54df27e99cb")
+		)
+		(pin "1"
+			(uuid "47b49fa5-a14c-42ec-b4c8-0d19de44a691")
+		)
+		(instances
+			(project "astra"
+				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
+					(reference "D6")
 					(unit 1)
 				)
 			)

@@ -6709,6 +6709,28 @@
 			)
 		)
 	)
+	(global_label "STATUS_LED_1"
+		(shape input)
+		(at 87.63 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8a1c7864-308b-4310-a76c-97c78c92d5bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.9803 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "FLASH_IO_3"
 		(shape input)
 		(at 171.45 66.04 0)
@@ -7127,6 +7149,28 @@
 			)
 		)
 	)
+	(global_label "STATUS_LED_2"
+		(shape input)
+		(at 87.63 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c756e85a-f779-4947-8f99-ebfebcb863fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.9803 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DDG_MAGIC_3"
 		(shape input)
 		(at 87.63 48.26 0)
@@ -7189,28 +7233,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "STATUS_LED"
-		(shape input)
-		(at 87.63 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d37e950e-aca4-465e-9cde-076d853f946e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.8032 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
