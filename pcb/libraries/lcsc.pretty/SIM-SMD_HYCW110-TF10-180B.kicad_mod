@@ -264,4 +264,15 @@
 		(uuid "5bbb3826-f894-49dd-83c7-d08799526cbe")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/lcsc.3dshapes/SD_micro.stp"
+		(offset
+			(xyz 2.9 4.2 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

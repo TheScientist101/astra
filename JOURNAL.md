@@ -8,7 +8,7 @@ created_at: "2025-05-23"
 ### Total hours:
 
 - TheScientist101: 18.5
-- grimsteel: 30.5
+- grimsteel: 36.5
 
 # May 23rd:
 
@@ -196,7 +196,7 @@ We decided to lock in and actually finish the PCB.
 
 The JTAG connector was taking up too much space, so Urjith invented the MONKE connector to solve this. (It's basically a rearranged JTAG connector without the duplicate GND/3.3V pins).
 
-![MONKE](assets/day-8-monke.png)
+![MONKE](nassets/day-8-monke.png)
 
 He also added a DUCKDUCKGOOSE connector for extensibility and to allow the development of potential HATs for the drone. To save pins, it can be configured to either expose the SPI or the I2C pins with a DPDT switch.
 
@@ -217,3 +217,36 @@ After the huddle, Siddhant finished up the routing of the PCB. This involved mov
 The power traces were all routed on the external layers with 2mm tracks to ensure they would be able to provide enough current to the motors.
 
 ![pcb](assets/day-8-routing.png)
+
+
+# July 5th-9th
+ 
+ 
+**Hours spent:** 
+
+grimsteel: 6
+
+We realized that our current FPV system would be really slow - the nrf wouldn be able to cut it.
+
+We decided to add FPV functionality on an extension board through our DDG connector.
+
+I removed all the camera components and extended the DDG connector, both cleaning up a lot of the routing and minimizing the size of the PCB.
+
+I added 5 extra GPIOs to the DDG connector and removed the I2C/SPI switch (and added dedicated pins)
+
+To save space, I made the RST button SMD.
+
+With the newly freed GPIO pins, I also added two extra buttons, some status LEDs, two neopixels, and a barometer.
+
+I also added some silkscreen art. The PCB should hopefully be done!
+
+### New Peripherals:
+
+![image](assets/day-9-periphs.png)
+
+### Finished PCB (hopefully):
+
+![routing](assets/day-9-pcb.png) ![top](assets/day-9-pcb-top.png) ![bottom](assets/day-9-pcb-bottom.png)
+
+
+I also started work on the firmware. We're going to be using betaflight. The configuration is all done through a single config.h file.
