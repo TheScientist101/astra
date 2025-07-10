@@ -3153,6 +3153,18 @@
 		(uuid 6f0cb738-42c1-4156-b30d-db414b9594e9)
 	)
 	(rectangle
+		(start 125.73 19.05)
+		(end 180.34 66.04)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7a208c5c-fc76-4649-b9f0-ef0fd2114d1f)
+	)
+	(rectangle
 		(start 19.05 100.33)
 		(end 74.93 142.24)
 		(stroke
@@ -3231,6 +3243,17 @@
 			)
 		)
 		(uuid "43ee8ed4-b3e4-457e-8e08-973b826dc643")
+	)
+	(text "Barometer"
+		(exclude_from_sim no)
+		(at 126.746 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "53e70a25-9203-4d9e-be9e-a08aa1a16f24")
 	)
 	(text "NRF Wireless Chip"
 		(exclude_from_sim no)
