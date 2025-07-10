@@ -20,3 +20,5 @@ CMakeUserPresets.json
 
 *.elf
 *.map
+*.hex
+*.bin
