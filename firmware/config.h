@@ -144,6 +144,18 @@
 #define MOTOR3_PIN           PA10
 #define MOTOR4_PIN           PA11
 
+// RX - NRF24
+#define USE_RX
+#define USE_RX_NRF24
+#define USE_RX_SPI
+// protocol - can be customized
+#define USE_RX_SYMA
+#define RX_CE_PIN           PB10
+#define RX_SPI_CS_PIN       PB11
+#define RX_SPI_EXTI_PIN     PC7
+#define RX_SPI_INSTANCE     SPI2
+#define RX_NSS_PIN          RX_SPI_CS_PIN
+
 // BMI270 - SPI4
 #define USE_GYRO
 #define USE_ACC

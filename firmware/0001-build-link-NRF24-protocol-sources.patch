@@ -1,0 +1,31 @@
+From 1dc3f4c4c505bff27ac95c0436658f4a25b65b2f Mon Sep 17 00:00:00 2001
+From: Siddhant Kameswar <115331356+grimsteel@users.noreply.github.com>
+Date: Thu, 10 Jul 2025 13:57:26 -0500
+Subject: [PATCH] build: link NRF24 protocol sources
+
+---
+ mk/source.mk | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/mk/source.mk b/mk/source.mk
+index 90a7cda..b6f8e21 100644
+--- a/mk/source.mk
++++ b/mk/source.mk
+@@ -351,7 +351,13 @@ RX_SRC = \
+             rx/cyrf6936_spektrum.c \
+             rx/expresslrs.c \
+             rx/expresslrs_common.c \
+-            rx/expresslrs_telemetry.c
++            rx/expresslrs_telemetry.c \
++            rx/nrf24_cx10.c \
++            rx/nrf24_h8_3d.c \
++            rx/nrf24_inav.c \
++            rx/nrf24_kn.c \
++            rx/nrf24_syma.c \
++            rx/nrf24_v202.c
+ 
+ FLASH_SRC += \
+             drivers/flash/flash.c \
+-- 
+2.49.0
+
