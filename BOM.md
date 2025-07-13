@@ -47,16 +47,26 @@ _Mass estimate is included in PCB mass estimate_
 | WS2812B | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B-S_C22461793.html?s_z=n_ws2812b) | 3 | $0.53 (20 ct) |
 | BMP388 Barometer | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342A2P-WZ_C557591.html) | 1 | $1.25 |
 
+## Controller Components
+| Item | Link | Quantity | Total Price |
+| - | - | - | - |
+| SN74HC148 Priority Encoder | [LCSC](https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html) | 1 | $0.74 |
+
 ## FPV Module Components
 
 > Target weight: **50g**
 
 ## Components which we already have:
 
-| Item                    | Quantity | Total Mass on Drone |
-| ----------------------- | -------- | ------------------- |
-| Pin headers/sockets             | -        | -                   |
-| 2 pin JST-2.0 connector | 5        | -                   |
+| Item                    | Quantity |
+| ----------------------- | -------- |
+| Pin headers/sockets     | 2x10, 2x8, 2x8 |
+| 2 pin JST-2.0 connector | 1 |
+| 1N5819 Schottky | 2 |
+| ESP32-C3 Super Mini | 1 |
+| Hall effect Joystick | 2 |
+| 12mm Push Button | 4 |
+
 
 <!--
 | ESP32-S3-WROOM-1U-N4 | [DigiKey](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1U-N4/16162640) [LCSC](https://www.aliexpress.us/item/3256806096656294.html) | 1 | $3.61 + $4.99 | - |
