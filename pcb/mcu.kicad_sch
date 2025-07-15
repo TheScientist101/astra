@@ -5031,6 +5031,18 @@
 		)
 		(uuid "3d89523d-6712-4636-a05d-915c175350aa")
 	)
+	(text "Chip-level"
+		(exclude_from_sim no)
+		(at 164.592 144.272 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 194 1)
+			)
+			(justify left)
+		)
+		(uuid "45aeb5a9-f0c2-4e67-9549-438e431006bb")
+	)
 	(text "Battery Connector"
 		(exclude_from_sim no)
 		(at 187.706 15.494 0)
