@@ -7,8 +7,8 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 18.5
-- grimsteel: 36.5
+- TheScientist101: 28
+- grimsteel: 46
 
 # May 23rd:
 
@@ -218,11 +218,9 @@ The power traces were all routed on the external layers with 2mm tracks to ensur
 
 ![pcb](assets/day-8-routing.png)
 
-
 # July 5th-9th
- 
- 
-**Hours spent:** 
+
+**Hours spent:**
 
 grimsteel: 6
 
@@ -248,5 +246,27 @@ I also added some silkscreen art. The PCB should hopefully be done!
 
 ![routing](assets/day-9-pcb.png) ![top](assets/day-9-pcb-top.png) ![bottom](assets/day-9-pcb-bottom.png)
 
-
 I also started work on the firmware. We're going to be using betaflight. The configuration is all done through a single config.h file.
+
+# July 10th-14th
+
+**Hours spent:**
+
+TheScientist101: 2.5 (huddle) + 7 on controller
+
+grimsteel: 2.5 (huddle) + 2 on controller + 3 on frame + 2 on firmware and pcb improvements
+
+We designed the PCB for the controller. Apart from the devboard and NRF chip, it is a simple controller with two joysticks, 4 buttons, and three status leds. We initially wanted to use a Raspberry Pi Pico, but we decided to use an ESP32 C3 Supermini instead to save space on the PCB. Additionally, the ESP32 has built-in Wi-Fi which could allow us to pair a phone as an alternative controller.
+
+While this should have been a simple PCB, we ran into trouble due to the devboard's lack of GPIOs. We initially thought to use a keyboard matrix: a technique we had learned from Hack Club's Hackpad program. While this would have allowed us to fit all of our components on the board, we were concerned about problems arising from integrating the joystick into the matrix. Since PCB iterations have become quite costly, we decided to use a simpler design that took advantage of a priority encoder. This allowed us to only use 3 GPIO pins for the 6 buttons (four actual buttons and two pressable joysticks). Finally, we also decided to use neopixels for our status LEDs, as they only require a single GPIO pin and can be controlled easily. However, we may decide switch to an SPI OLED since it can convey more information.
+
+After Urjith designed most of the schematic, Siddhant did most of the PCB design.
+
+![Controller Schematic](assets/day-10-controller-schematic.png)
+![Controller PCB](assets/day-10-controller-pcb.png)
+
+Siddhant also designed a case/frame for the drone in Onshape. It looks immaculate if I do say so myself. I plan to add a perching mechanism and some mounting hooks for DDG extensions.
+
+![Frame](assets/day-10-frame.png)
+
+He also finished the betaflight configuration, changed the IMU to use SPI, added SD card detection (to see if an SD card is actually in the holder) and added a barometer to the drone.
