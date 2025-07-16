@@ -7,7 +7,7 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 28
+- TheScientist101: 29
 - grimsteel: 46
 
 # May 23rd:
@@ -270,3 +270,23 @@ Siddhant also designed a case/frame for the drone in Onshape. It looks immaculat
 ![Frame](assets/day-10-frame.png)
 
 He also finished the betaflight configuration, changed the IMU to use SPI, added SD card detection (to see if an SD card is actually in the holder) and added a barometer to the drone.
+
+# July 15th
+
+**Hours spent:**
+
+TheScientist101: 1
+
+I tested some if the pinout for some joysticks I have should work for the controller, and they should. It took a while since the pins of the joysticks weren't long enough for the jumper wires, and I had to hold them in place while testing. I used this simple micropython script on a pico to test.
+
+```python
+from machine import ADC,Pin
+import time
+
+axis = ADC(Pin(28, Pin.IN))
+
+while True:
+    axis = axis.read_u16() / 65535.0
+    print(f"value:{axis}")
+    time.sleep(0.1)
+```
