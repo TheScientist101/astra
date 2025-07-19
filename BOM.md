@@ -51,6 +51,7 @@ _Mass estimate is included in PCB mass estimate_
 | Item | Link | Quantity | Total Price |
 | - | - | - | - |
 | SN74HC148 Priority Encoder | [LCSC](https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html) | 1 | $0.74 |
+| ADS1115 ADC                | [Aliexpress](https://www.aliexpress.us/item/2251832125341942.html) (ADS1115 Blue) | 1 | $1.61 |
 
 ## FPV Module Components
 
