@@ -2,3 +2,4 @@ dependencies:
   nopnop2002/mirf:
     path: components/mirf/
     git: https://github.com/nopnop2002/esp-idf-mirf.git
+  espressif/led_strip: ^3.0.1~1
