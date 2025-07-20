@@ -69,6 +69,7 @@ Joystick::Joystick(gpio_num_t i2c_sda, gpio_num_t i2c_scl, gpio_num_t alert_pin)
   // interrupt on rising edge (active-low)
   // TODO: check this?
   alert_pin_cfg.intr_type = GPIO_INTR_POSEDGE;
+  ESP_ERROR_CHECK(gpio_config(&alert_pin_cfg));
 }
 
 Joystick::~Joystick() {

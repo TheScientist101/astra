@@ -51,11 +51,11 @@ static void IRAM_ATTR button_isr_handler(void* arg) {
   uint8_t bit;
   switch (gpio_num) {
     case BUTTON_ENCODER_0:
-      bit = 0;
+      bit = 0; break;
     case BUTTON_ENCODER_1:
-      bit = 1;
+      bit = 1; break;
     case BUTTON_ENCODER_2:
-      bit = 2;
+      bit = 2; break;
     default: return;
   }
 
@@ -122,7 +122,7 @@ uint8_t map_v202_rotation(uint8_t joystick_value) {
   else return (uint8_t) (signed_value) + 0x80;
 }
 
-void app_main(void)
+extern "C" void app_main(void)
 {
   // setup per-pin interrupts
   gpio_install_isr_service(0);
