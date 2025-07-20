@@ -161,5 +161,7 @@ void app_main(void)
     // TODO: do something here
     uint8_t flags = 0;
     v202.command(throttle, yaw, pitch, roll, flags);
+
+    vTaskDelay(50 / portTICK_PERIOD_MS);
   }
 }

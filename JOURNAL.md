@@ -8,7 +8,7 @@ created_at: "2025-05-23"
 ### Total hours:
 
 - TheScientist101: 29
-- grimsteel: 46
+- grimsteel: 51
 
 # May 23rd:
 
@@ -289,4 +289,38 @@ while True:
     axis = axis.read_u16() / 65535.0
     print(f"value:{axis}")
     time.sleep(0.1)
+```
+
+# July 17th-19th
+
+**Hours spent:**
+
+grimsteel: 5
+
+I wrote the firmware for the transmitter/controller. It uses `esp-idf`, and we're using the V202 protocol for transmission between the transmitter and the drone.
+
+Right now, the firmware is pretty basic. It has an ADC sampling loop for the joysticks and sends the latest joystick values to the drone every 50ms.
+
+I ended up adding an external ADC for the joysticks instead of relying on the built in ESP32 ADC as we do need a higher level of accuracy.
+
+![adc](assets/day-11-adc.png)
+
+The ESP32 isn't very powerful, so in order to ensure that it's still responsive, I wrote this code to scale the raw ADC value into one between 0 and 255:
+
+```cpp
+/// Scale a signed 16-bit 3.3V ADC value to an unsigned byte
+uint8_t scale_adc_value(int16_t value) {
+  uint32_t unsigned_value = value < 0 ? 0 : value;
+  // max input voltage: 3.3V
+  // max range: 4.096V
+  // max output value (theoretical): 2^15
+  // max actual output value: 3.3V/4.096V * 2^15 = 26400
+  // 26400 * 5 >> 9 = 257 (which is really close to 255)
+  // 26214 * 5 >> 9 = 255 (max value that yields 255)
+  uint8_t result = 255;
+  if (unsigned_value <= 26214) {
+    result = (unsigned_value * 5) >> 9;
+  }
+  return result;
+}
 ```
