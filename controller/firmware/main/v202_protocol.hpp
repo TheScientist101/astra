@@ -25,6 +25,21 @@ static uint8_t freq_hopping[][16] = {
      0x10, 0x26, 0x20, 0x1F} //  03
 };
 
+enum {
+    // packet[14] flags
+    V2X2_FLAG_CAMERA = 0x01, // also automatic Missile Launcher and Hoist in one direction
+    V2X2_FLAG_VIDEO  = 0x02, // also Sprayer, Bubbler, Missile Launcher(1), and Hoist in the other dir.
+    V2X2_FLAG_FLIP   = 0x04,
+    V2X2_FLAG_UNK9   = 0x08,
+    V2X2_FLAG_LED    = 0x10,
+    V2X2_FLAG_UNK10  = 0x20,
+    V2X2_FLAG_BIND   = 0xC0,
+    // packet[10] flags
+    V2X2_FLAG_HEADLESS  = 0x02,
+    V2X2_FLAG_MAG_CAL_X = 0x08,
+    V2X2_FLAG_MAG_CAL_Y = 0x20
+};
+
 static uint8_t freq_test[8];
 
 typedef struct __attribute__((__packed__)) {

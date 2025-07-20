@@ -3,3 +3,12 @@ dependencies:
     path: components/mirf/
     git: https://github.com/nopnop2002/esp-idf-mirf.git
   espressif/led_strip: ^3.0.1~1
+  ads111x:
+    path: components/ads111x/
+    git: https://github.com/UncleRus/esp-idf-lib.git
+  i2cdev:
+    path: components/i2cdev/
+    git: https://github.com/UncleRus/esp-idf-lib.git
+  esp_idf_lib_helpers:
+    path: components/esp_idf_lib_helpers/
+    git: https://github.com/UncleRus/esp-idf-lib.git

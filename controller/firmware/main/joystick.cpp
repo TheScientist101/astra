@@ -1,116 +1,141 @@
 #include "joystick.hpp"
 #include <esp_err.h>
-#include <string.h>
 #include <esp_log.h>
 
 #define TAG "Joystick"
 
-Joystick::Joystick(adc_channel_t joy1_h, adc_channel_t joy1_v, adc_channel_t joy2_h, adc_channel_t joy2_v) {
-  adc_channels[0] = joy1_h;
-  adc_channels[1] = joy1_v;
-  adc_channels[2] = joy2_h;
-  adc_channels[3] = joy2_v;
+// channel index to mux mode mapping
+static ads111x_mux_t channel_mux[4] = {
+  ADS111X_MUX_0_GND,
+  ADS111X_MUX_1_GND,
+  ADS111X_MUX_2_GND,
+  ADS111X_MUX_3_GND,
+};
 
+#define MAX_RAW_ADC_VALUE 26400
+#define MAX_USED_RAW_ADC_VALUE 26214
+#define EPSILON 0.000001
+
+/// Scale a signed 16-bit 3.3V ADC value to an unsigned byte
+uint8_t scale_adc_value(int16_t value) {
+  uint32_t unsigned_value = value < 0 ? 0 : value;
+  // max input voltage: 3.3V
+  // max range: 4.096V
+  // max output value (theoretical): 2^15
+  // max actual output value: 3.3V/4.096V * 2^15 = 26400
+  static_assert((int) (3.3/4.096 * (1 << 15) + EPSILON) == MAX_RAW_ADC_VALUE, "Expect MAX_RAW_ADC_VALUE to be correct");
+  // 26400 * 5 >> 9 = 257 (which is really close to 255)
+  static_assert(MAX_RAW_ADC_VALUE * 5 >> 9 > 255, "Expect MAX_RAW_ADC_VALUE to be out of bounds when converting");
+  static_assert((MAX_USED_RAW_ADC_VALUE + 1) * 5 >> 9 > 255, "Expect MAX_USED_RAW_ADC_VALUE + 1 to be out of bounds when converting");
+  // 26214 * 5 >> 9 = 255 (max value that yields 255)
+  static_assert(MAX_USED_RAW_ADC_VALUE * 5 >> 9 == 255, "Expect MAX_USED_RAW_ADC_VALUE to be scaled to 255");
+  // this is a 0.7% loss in range
+  uint8_t result = 255;
+  if (unsigned_value <= MAX_USED_RAW_ADC_VALUE) {
+    result = (unsigned_value * 5) >> 9;
+  }
+  return result;
+}
+
+Joystick::Joystick(gpio_num_t i2c_sda, gpio_num_t i2c_scl, gpio_num_t alert_pin) : alert_pin(alert_pin) {
   ESP_LOGI(TAG, "Initializing ADC");
 
-  // initialize ADC
-  adc_continuous_handle_cfg_t adc_cfg = {
-    .max_store_buf_size = 1024,
-    .conv_frame_size = 256,
-    .flags = { 0 }
-  };
-  ESP_ERROR_CHECK(adc_continuous_new_handle(&adc_cfg, &adc_handle));
+  // ADC has internal pullups
+  adc_i2c.cfg.scl_pullup_en = false;
+  adc_i2c.cfg.sda_pullup_en = false;
 
-  adc_digi_pattern_config_t adc_pattern[JOYSTICK_NUM_ADC_CHANNELS];
-  for (int i = 0; i < JOYSTICK_NUM_ADC_CHANNELS; i++) {
-    adc_pattern[i].atten = ADC_ATTEN_DB_12;
-    adc_pattern[i].channel = adc_channels[i] & 0x7;
-    adc_pattern[i].unit = ADC_UNIT_1;
-    adc_pattern[i].bit_width = SOC_ADC_DIGI_MAX_BITWIDTH;
-  }
+  // init i2c device
+  ESP_ERROR_CHECK(ads111x_init_desc(&adc_i2c, ADS111X_ADDR_GND, I2C_NUM_0, i2c_sda, i2c_scl));
 
-  // configure the channels
-  adc_continuous_config_t digi_cfg = {
-    // 4 ADC channels used
-    .pattern_num = JOYSTICK_NUM_ADC_CHANNELS,
-    .adc_pattern = adc_pattern,
-    .sample_freq_hz = 1 * 1000, // // Set sample frequency to 1 kHz
-    // all pins are on ADC1
-    .conv_mode = ADC_CONV_SINGLE_UNIT_1,
-    .format = ADC_DIGI_OUTPUT_FORMAT_TYPE2,
-  };
+  ESP_ERROR_CHECK(ads111x_set_gain(&adc_i2c, ADS111X_GAIN_4V096));
+  // about 4x as fast as nRF - we can tune this
+  ESP_ERROR_CHECK(ads111x_set_data_rate(&adc_i2c, ADS111X_DATA_RATE_250));
+  //ESP_ERROR_CHECK(ads111x_set_comp_mode(&adc_i2c, ADS111X_COMP_MODE_NORMAL));
+  // assert after 1 conversion
+  ESP_ERROR_CHECK(ads111x_set_comp_queue(&adc_i2c, ADS111X_COMP_QUEUE_1));
 
-  ESP_ERROR_CHECK(adc_continuous_config(adc_handle, &digi_cfg));
+  // set ALERT to conversion-ready pin
+  // lowest bit 0
+  ESP_ERROR_CHECK(ads111x_set_comp_low_thresh(&adc_i2c, 0x0000));
+  // highest bit 1
+  ESP_ERROR_CHECK(ads111x_set_comp_high_thresh(&adc_i2c, 0x8000));
 
-  // register callbacks
-  adc_continuous_evt_cbs_t cbs;
-  cbs.on_conv_done = Joystick::adc_conv_done_callback;
-  ESP_ERROR_CHECK(adc_continuous_register_event_callbacks(adc_handle, &cbs, this));
-
-  main_task_handle = xTaskGetCurrentTaskHandle();
+  // configure alert pin
+  gpio_config_t alert_pin_cfg;
+  alert_pin_cfg.pin_bit_mask = 1ULL << alert_pin;
+  alert_pin_cfg.pull_down_en = GPIO_PULLDOWN_DISABLE;
+  alert_pin_cfg.pull_up_en = GPIO_PULLUP_ENABLE;
+  alert_pin_cfg.mode = GPIO_MODE_INPUT;
+  // interrupt on rising edge (active-low)
+  // TODO: check this?
+  alert_pin_cfg.intr_type = GPIO_INTR_POSEDGE;
 }
 
 Joystick::~Joystick() {
+  ESP_LOGI(TAG, "Stopping conversion task");
+  vTaskDelete(main_loop_handle);
   ESP_LOGI(TAG, "Cleaning up ADC");
-  ESP_ERROR_CHECK(adc_continuous_stop(adc_handle));
-  ESP_ERROR_CHECK(adc_continuous_deinit(adc_handle));
+  ESP_ERROR_CHECK(ads111x_set_mode(&adc_i2c, ADS111X_MODE_SINGLE_SHOT));
+  ESP_ERROR_CHECK(ads111x_free_desc(&adc_i2c));
 }
 
-void Joystick::start() {
+void Joystick::start(TaskHandle_t caller_task_handle) {
+  this->caller_task_handle = caller_task_handle;
+
+  ESP_LOGI(TAG, "Starting conversion task");
+  xTaskCreate(Joystick::main_loop_handoff, "Joystick_Conversion_Task", 4096, this, 10, &main_loop_handle);
+}
+
+
+void IRAM_ATTR Joystick::alert_isr_handler(void* arg) {
+  // joystick instance passed as data parm
+  Joystick* joystick = (Joystick*) arg;
+
+  BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+
+  // resume the main loop
+  vTaskNotifyGiveFromISR(joystick->main_loop_handle, &xHigherPriorityTaskWoken);
+
+  portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+}
+
+void Joystick::main_loop() {
+  // register interrupt handler
+  ESP_ERROR_CHECK(gpio_isr_handler_add(alert_pin, alert_isr_handler, this));
+
   ESP_LOGI(TAG, "Starting ADC");
-  ESP_ERROR_CHECK(adc_continuous_start(adc_handle));
-}
+  // trigger initial read
+  uint8_t current_channel = 0;
+  ESP_ERROR_CHECK(ads111x_set_input_mux(&adc_i2c, channel_mux[current_channel]));
+  ESP_ERROR_CHECK(ads111x_set_mode(&adc_i2c, ADS111X_MODE_CONTINUOUS));
 
-void Joystick::read() {
-  // wait for adc data to come in
-  ulTaskNotifyTakeIndexed(JOYSTICK_TASK_NOTIFY_INDEX, pdTRUE, portMAX_DELAY);
-
-  uint8_t result[256];
-  memset(result, 0xCC, 256);
-  uint32_t ret_num = 0;
-
-  // read until timeout
   while (true) {
-    esp_err_t res = adc_continuous_read(adc_handle, result, 256, &ret_num, 0);
-    switch (res) {
-      ESP_LOGD(TAG, "Received %" PRIu32 " bytes from ADC", ret_num);
-      case ESP_OK:
-        for (int i = 0; i < ret_num; i += SOC_ADC_DIGI_RESULT_BYTES)  {
-          adc_digi_output_data_t *output = (adc_digi_output_data_t*) &result[i];
-          adc_channel_t chan = (adc_channel_t) output->type2.channel;
-          // value from 0 to 2^SOC_ADC_MAX_BITWIDTH (4096)
-          uint32_t data = output->type2.data;
+    vTaskDelay(1);
 
-          // store data
-          if (chan == adc_channels[0]) {
-            joy1_h = data;
-          } else if (chan == adc_channels[1]) {
-            joy1_v = data;
-          } else if (chan == adc_channels[2]) {
-            joy2_h = data;
-          } else if (chan == adc_channels[3]) {
-            joy2_v = data;
-          } else {
-            ESP_LOGW(TAG, "Invalid ADC channel: %" PRIu32, chan);
-          }
-        }
-      case ESP_ERR_TIMEOUT:
-        // no more ADC data available
-        return;
-      default:
-        ESP_ERROR_CHECK(res);
+    // wait for conversion to be ready
+    ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+
+    int16_t value;
+    ads111x_get_value(&adc_i2c, &value);
+    uint8_t scaled_value = scale_adc_value(value);
+
+    // store corresponding value
+    switch (current_channel) {
+      case 0: joy2_h = scaled_value; break;
+      case 1: joy2_v = scaled_value; break;
+      case 2: joy1_h = scaled_value; break;
+      case 3: joy1_v = scaled_value; break;
     }
 
-    // wait for 1 tick
-    vTaskDelay(1);
+    if (!ready) {
+      // if this is the first time fetching data, send notification
+      ready = true;
+      xTaskNotifyGiveIndexed(caller_task_handle, JOYSTICK_TASK_NOTIFY_INDEX);
+    }
+
+    if ((++current_channel) >= 4) current_channel = 0;
+
+    // update channel
+    ESP_ERROR_CHECK(ads111x_set_input_mux(&adc_i2c, channel_mux[current_channel]));
   }
-}
-
-bool IRAM_ATTR Joystick::adc_conv_done_callback(adc_continuous_handle_t handle, const adc_continuous_evt_data_t *edata, void *user_data) {
-  Joystick* joy = (Joystick*) user_data;
-  BaseType_t mustYield = pdFALSE;
-  // data processing done; continue
-  vTaskNotifyGiveIndexedFromISR(joy->main_task_handle, JOYSTICK_TASK_NOTIFY_INDEX, &mustYield);
-
-  return mustYield == pdTRUE;
 }

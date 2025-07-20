@@ -1,4 +1,20 @@
 dependencies:
+  ads111x:
+    component_hash: efd9dcd3980cc35d5b87f2322c5c7ea6ffe9dd44af94a96acfb2886b1a6c48d4
+    dependencies: []
+    source:
+      git: https://github.com/UncleRus/esp-idf-lib.git
+      path: components/ads111x/
+      type: git
+    version: 75ec40f02da7b39b590604a341492c1accb0dcb6
+  esp_idf_lib_helpers:
+    component_hash: 798b1a6294af807374e9de099905af9a9b779a27068437c2912a7232b87dc6ac
+    dependencies: []
+    source:
+      git: https://github.com/UncleRus/esp-idf-lib.git
+      path: components/esp_idf_lib_helpers/
+      type: git
+    version: 75ec40f02da7b39b590604a341492c1accb0dcb6
   espressif/led_strip:
     component_hash: 223998f10cae6d81f2ad2dd3c1103c2221be298c708e37917482b0153f3ec64e
     dependencies:
@@ -9,6 +25,14 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 3.0.1~1
+  i2cdev:
+    component_hash: b1196e88d64de47e49d29505b5129d3d0fc7045c3f48b7cf166864b899ca6ab0
+    dependencies: []
+    source:
+      git: https://github.com/UncleRus/esp-idf-lib.git
+      path: components/i2cdev/
+      type: git
+    version: 75ec40f02da7b39b590604a341492c1accb0dcb6
   idf:
     source:
       type: idf
@@ -22,8 +46,11 @@ dependencies:
       type: git
     version: 8845fb56f156c8f91e5736dad4566b62d0b79f14
 direct_dependencies:
+- ads111x
+- esp_idf_lib_helpers
 - espressif/led_strip
+- i2cdev
 - nopnop2002/mirf
-manifest_hash: e2081f9c52a8f1244a448ac0eaf194bb5177d509c308ba2824eeb1b34c0697e8
+manifest_hash: 75643f8224fd86a6af59d2166b348b39f385f0e96171ccc20de7f89bf121b107
 target: esp32c3
 version: 2.0.0
