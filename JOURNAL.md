@@ -7,7 +7,7 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 34.5
+- TheScientist101: 35
 - grimsteel: 54
 
 # May 23rd:
@@ -329,7 +329,7 @@ uint8_t scale_adc_value(int16_t value) {
 
 **Hours spent:**
 
-TheScientist101: 5.5
+TheScientist101: 6
 
 grimsteel: 3
 
@@ -360,3 +360,7 @@ Designing the case took a while because converting the coordinates from the PCB 
 Gosh that took longer than I expected. I used to like OpenSCAD, but now I am not so sure.
 
 ![controller case](assets/day-12-controller-case.png)
+
+Checking back in, I added an additional mounting hole so that the PCB is more secure in the case. This should be the final version of the case. (I also changed OpenSCAD to dark mode, which is why the colors are different)
+
+![controller case final](assets/day-12-controller-case-v2.png)
