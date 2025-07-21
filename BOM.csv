@@ -9,13 +9,14 @@ M2 Screws + Nuts ,https://www.aliexpress.us/item/3256804647352410.html ,6,$5.26
 "Li-Po Battery (380mAh, 25C) ",https://www.amazon.com/URGENEX-380mAh-Battery-Charger-Controller/dp/B08DD5MTKM ,1,$13.99
 YoungRC 8520 Coreless Motor ,https://www.amazon.com/YoungRC-8520-Coreless-Propeller-Quadcopter/dp/B0BV6P4XYX ,4,$11.99
 FPV Camera + Transmitter ,https://www.amazon.com/Wolfwhoop-5-8GHz-Transmitter-Interface-Quadcopter/dp/B073J61SSQ ,1,$25.99
+Estimated Amazon + Ali Tax,-,N/A,$8.19
 3D Printed Frame +Case,N/A,1,$0.00
-64 MB NOR Flash: W25Q64JVSSIQ,https://www.lcsc.com/product-detail/NOR-FLASH_Winbond-Elec-W25Q64JVSSIQ_C179171.html,1,$0.88
+64 MB NOR Flash: W25Q64JVSSIQ,https://www.lcsc.com/product-detail/NOR-FLASH_Winbond-Elec-W25Q64JVSSIQ_C179171.html,1,$2.32
 A03400A NMOS,https://lcsc.com/product-detail/MOSFETs_UMW-Youtai-Semiconductor-Co-Ltd-AO3400A_C347475.html,4,$0.62
-BMI270 IMU,https://www.lcsc.com/product-detail/Accelerometers_Bosch-Sensortec-BMI270_C2836813.html,1,$0.92
-STM32H750XBH6,https://www.lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_STMicroelectronics-STM32H750XBH6_C405932.html,1,$6.45
-"25 MHz Crystal (optional, but good)",https://lcsc.com/product-detail/Crystals_Shenzhen-SCTF-Elec-SX3B25-000F1010F30_C2901684.html,1,$0.36
-TLV1117LV-3.3,https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV1117LV33DCYR_C15578.html,1,$0.84
+BMI270 IMU,https://www.lcsc.com/product-detail/Accelerometers_Bosch-Sensortec-BMI270_C2836813.html,1,$0.46
+STM32H750XBH6,https://www.lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_STMicroelectronics-STM32H750XBH6_C405932.html,1,$6.40
+"25 MHz Crystal (optional, but good)",https://lcsc.com/product-detail/Crystals_Shenzhen-SCTF-Elec-SX3B25-000F1010F30_C2901684.html,1,$0.39
+TLV1117LV-3.3,https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV1117LV33DCYR_C15578.html,1,$1.02
 FCM1608KF-601T05 Ferrite Beads,https://www.lcsc.com/product-detail/Ferrite-Beads_TAI-TECH-FCM1608KF-601T05_C133937.html,1,$0.18
 100nF 16V 0805 Capacitor,https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Venkel-C0805X7R160-104KNP_C3865954.html,22,$0.35
 1uF 16V 0805 Capacitor,https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.html,2,$0.21
@@ -34,8 +35,9 @@ SPST Push Button,https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342
 WS2812B,https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B-S_C22461793.html,5,$0.53
 BMP388 Barometer,https://lcsc.com/product-detail/Pressure-Sensors_Bosch-BMP388_C779278.html?s_z=n_BMP388,1,$1.25
 SN74HC148 Priority Encoder,https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html,1,$0.74
+LCSC shipping,N/A,N/A,$9.30
 1N5819 Schottky,N/A,2,$0.00
 ESP32-C3 Super Mini,N/A,1,$0.00
 Hall effect Joystick,N/A,2,$0.00
 12mm Push Button,N/A,4,$0.00
-Total,N/A,N/A,$115.30
+Total,N/A,N/A,$133.93

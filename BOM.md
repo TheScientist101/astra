@@ -15,7 +15,8 @@
 | YoungRC 8520 Coreless Motor   | [Amazon](https://www.amazon.com/YoungRC-8520-Coreless-Propeller-Quadcopter/dp/B0BV6P4XYX)        | 4        | $11.99      | 20g                 |
 | FPV Camera + Transmitter      | [Amazon](https://www.amazon.com/Wolfwhoop-5-8GHz-Transmitter-Interface-Quadcopter/dp/B073J61SSQ) | 1        | $25.99      | 2.6g                |
 | Frame                         | -                                                                                                | 1        | -           | 5g                  |
-| **Total**                     | -                                                                                                | -        | **$99.29**  | 50.6g               |
+| Estimated Tax | - | - | $8.19 | - |
+| **Total**                     | -                                                                                                | -        | **$107.48**  | 50.6g               |
 
 > The Amazon order total is above $35, so shipping is free.
 
@@ -49,9 +50,10 @@ _Mass estimate is included in PCB mass estimate_
 | WS2812B                             | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B-S_C22461793.html?s_z=n_ws2812b)                                     | 3        | $0.53 (20 ct)           |
 | BMP388 Barometer                    | [LCSC](https://lcsc.com/product-detail/Pressure-Sensors_Bosch-BMP388_C779278.html?s_z=n_BMP388)                                                               | 1        | $1.25                   |
 | SN74HC148 Priority Encoder          | [LCSC](https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html)                                        | 1        | $0.74                   |
-| **Total**                           | -                                                                                                                                                             | -        | **$16.01**              |
+| LCSC shipping | N/A | N/A | $9.30 |
+| **Total**                           | -                                                                                                                                                             | -        | **$26.45**              |
 
-## Overall total cost: **$115.30**
+## Overall total cost: **$133.93**
 
 > Overall Target weight: **50g**
 
