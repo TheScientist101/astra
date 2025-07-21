@@ -10380,7 +10380,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm"
 			(at 200.66 21.59 0)
 			(effects
 				(font
