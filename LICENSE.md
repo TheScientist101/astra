@@ -1,6 +1,6 @@
 # Licenses for Astra
 
-Consult the LICEENSE files within the subdirectories of this repository to find the correct license.
+Consult the LICENSE files within the subdirectories of this repository to find the correct license.
 
 In general,
 - All PCB files and CAD files are licensed under the `CERN-OHL-W`
