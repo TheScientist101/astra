@@ -1,14 +1,14 @@
 ---
 title: "Astra"
 author: "TheScientist101 and grimsteel"
-description: "Autonomous FPV drone"
+description: "Astra is an open source, low cost, extensible brushed drone."
 created_at: "2025-05-23"
 ---
 
 ### Total hours:
 
-- TheScientist101: 35
-- grimsteel: 54
+- TheScientist101: 36
+- grimsteel: 55
 
 # May 23rd:
 
@@ -364,3 +364,22 @@ Gosh that took longer than I expected. I used to like OpenSCAD, but now I am not
 Checking back in, I added an additional mounting hole so that the PCB is more secure in the case. This should be the final version of the case. (I also changed OpenSCAD to dark mode, which is why the colors are different)
 
 ![controller case final](assets/day-12-controller-case-v2.png)
+
+# July 21st
+
+**Hours spent:**
+
+TheScientist101: 1
+grimsteel: 1
+
+We're polishing up the project for submission.
+
+I updated the README to include pictures of the controller and added a "why" section to explain why we made this drone.
+
+Siddhant has been working on the finalizing the BOM and is adding silkscreen art to the controller PCB.
+
+This is definitely not our last entry as we will document the assembly and testing of the drone.
+
+I also want to make an extension board for the drone... I'm not exactly sure what it will do but we need to test the DUCKDUCKGOOSE connector.
+
+Maybe GPS?
