@@ -3,7 +3,7 @@
 ![Made with KiCAD](https://img.shields.io/badge/Made%20with-KiCAD-blue?style=flat-square&logo=kicad&color=blue) ![GitHub Repo stars](https://img.shields.io/github/stars/TheScientist101/astra?style=flat-square&color=orange) ![Code License](https://img.shields.io/badge/Code%20license-GPLv3-red?style=flat-square) ![CAD License](https://img.shields.io/badge/CAD%20license-OHL--W-green?style=flat-square)
 
 
-<h3 align="center">An open source, low cost, extensible brushed drone.</h3><img align="center" src="assets/day-10-frame.png" alt="Drone" title="Drone" />
+<h3 align="center">An open source, low cost, extensible brushed drone.</h3><img align="center" src="assets/cad.png" alt="Drone" title="Drone" />
 
 ## What is Astra?
 
@@ -32,7 +32,7 @@ PCB files can be found within the `drone/pcb/` folder.
 
 The Flight Controller uses the [betaflight](https://betaflight.com/) firmware. A betaflight config file as well as flashing instructions can be found in the `drone/firmware/` folder
 
-The frame for the FC was designed in Onshape. CAD files can be found in `drone/frame/`;
+The frame for the FC was designed in Onshape. CAD files can be found in `drone/cad/`;
 
 **Peripherals**:
 - `BMI270` - IMU
@@ -52,7 +52,7 @@ The PCB, firmware, and case for the transmitter can be found in the `controller/
 
 ## Pictures
 
-![**Full Schematic PDF**](assets/schematic.pdf)
+[**Full Schematic PDF**](assets/schematic.pdf)
 
 **Copper Layers:**
 
