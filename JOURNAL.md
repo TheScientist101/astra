@@ -7,7 +7,7 @@ created_at: "2025-05-23"
 
 ### Total hours:
 
-- TheScientist101: 29
+- TheScientist101: 34.5
 - grimsteel: 54
 
 # May 23rd:
@@ -329,6 +329,8 @@ uint8_t scale_adc_value(int16_t value) {
 
 **Hours spent:**
 
+TheScientist101: 5.5
+
 grimsteel: 3
 
 I spent some time polishing up the overall project. I added a battery holder to the frame, and exported the production files for the CAD and PCB to the repo.
@@ -344,3 +346,17 @@ I also added an FPV connector to the PCB, as this will be cheaper than making a 
 ![fpv](assets/day-12-fpv.png)
 
 Routing this was pretty hard, as space is scarce in the PCB, but I was able to do it pretty easily on In1.Cu after I moved the IMU to get some more space.
+
+It's me Urjith from here on out in today's journal entry (before it was Siddhant).
+
+I designed the case for the controller. I thought it would be cool to sandwich the PCB between two parts of a case since it would look pretty bare-bones. I designed the case in OpenSCAD, and it took a while to get the dimensions right, but I think it looks pretty good.
+
+While designing the case for the controller, I double-checked the joystick footprint and realized that the footprint I had was wrong. I had to change the footprint in the PCB, which was a bit of a pain, but luckily I didn't have to reroute too much. Subsequently I had to adjust the case to fit the new footprint, but that was pretty easy.
+
+I also had to add M2 holes to the PCB for the case screws. I am realizing as I am typing this that both of the holes are near the front, which might be problematic. I should probably add some more holes to the back of the PCB.
+
+Designing the case took a while because converting the coordinates from the PCB to OpenSCAD was a little tedious. Luckily, I got most of the coordinates right on my first try, so I didn't have to redo the case too much (except for the joysticks).
+
+Gosh that took longer than I expected. I used to like OpenSCAD, but now I am not so sure.
+
+![controller case](assets/day-12-controller-case.png)
