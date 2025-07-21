@@ -1,5 +1,5 @@
 ---
-title: "Astra"
+title: "astra"
 author: "TheScientist101 and grimsteel"
 description: "Astra is an open source, low cost, extensible brushed drone."
 created_at: "2025-05-23"
