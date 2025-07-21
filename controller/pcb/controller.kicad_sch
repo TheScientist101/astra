@@ -5518,7 +5518,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+		(property "Footprint" "stuff:SW_PUSH-12mm"
 			(at 255.27 71.12 0)
 			(effects
 				(font
@@ -7731,7 +7731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+		(property "Footprint" "stuff:SW_PUSH-12mm"
 			(at 255.27 36.83 0)
 			(effects
 				(font
@@ -8411,7 +8411,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+		(property "Footprint" "stuff:SW_PUSH-12mm"
 			(at 255.27 21.59 0)
 			(effects
 				(font
@@ -9441,7 +9441,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+		(property "Footprint" "stuff:SW_PUSH-12mm"
 			(at 255.27 53.34 0)
 			(effects
 				(font

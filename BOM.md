@@ -2,17 +2,18 @@
 
 ## General Items and Modules/Breakouts (Amazon + AliExpress)
 
-| Item                                 | Link                                                                                                                                                                         | Quantity | Total Price | Total Mass on Drone |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- | ------------------- |
-| PCB                                  |                                                                                                                                                                              | 1        | ~$25        | 10g                 |
-| NRF24L01 Breakout  (SMD24L01)        | [AliExpress](https://www.aliexpress.us/item/3256805889378019.html)                                                                                                           | 2        | $2.01       | 2g                  |
-| ADS1115 ADC                | [AliExpress](https://www.aliexpress.us/item/2251832125341942.html) (ADS1115 Blue) | 1 | $1.61 |
-| SMD Solder Paste                     | [AliExpress](https://www.aliexpress.us/item/3256807158914612.html)                                                                                                           | 1        | $3.36       | -                   |
-| 4 pin JST SH-1.0 Connector           | [AliExpress](https://www.aliexpress.us/item/3256805841019654.html)      | 1 | $1.78 |
-| Li-Po Battery (at least 12A current) | [Amazon](https://www.amazon.com/Tosiicop-3-7v-Drone-Lipo-Battery/dp/B0CR6DDGP1) [BetaFPV](https://betafpv.com/collections/batt-1s/products/bt2-0-450mah-1s-30c-battery-4pcs) | 1        | $9.99       | 17.6g               |
-| YoungRC 8520 Coreless Motor          | [Amazon](https://www.amazon.com/YoungRC-8520-Coreless-Propeller-Quadcopter/dp/B0BV6P4XYX)                                                                                    | 4        | $11.99      | 20g                 |
-| FPV Camera + Transmitter             | [Amazon](https://www.amazon.com/Wolfwhoop-5-8GHz-Transmitter-Interface-Quadcopter/dp/B073J61SSQ)                                                                             | 1        | $25.99      | 2.6g                 |
-| **Total** | - | - | **$81.73** | - |
+| Item                          | Link                                                                                             | Quantity | Total Price | Total Mass on Drone |
+|-------------------------------|--------------------------------------------------------------------------------------------------|----------|-------------|---------------------|
+| PCB                           |                                                                                                  | 1        | ~$25        | 10g                 |
+| NRF24L01 Breakout  (SMD24L01) | [AliExpress](https://www.aliexpress.us/item/3256805889378019.html)                               | 2        | $2.01       | 2g                  |
+| ADS1115 ADC                   | [AliExpress](https://www.aliexpress.us/item/2251832125341942.html) (ADS1115 Blue)                | 1        | $1.61       | - (controller)      |
+| SMD Solder Paste              | [AliExpress](https://www.aliexpress.us/item/3256807158914612.html)                               | 1        | $3.36       | - (negligible)      |
+| 4 pin JST SH-1.0 Connector    | [AliExpress](https://www.aliexpress.us/item/3256805841019654.html)                               | 1        | $1.78       | - (negligible)      |
+| Li-Po Battery (380mAh, 25C)   | [Amazon](https://www.amazon.com/URGENEX-380mAh-Battery-Charger-Controller/dp/B08DD5MTKM)         | 1        | $13.99      | 11g                 |
+| YoungRC 8520 Coreless Motor   | [Amazon](https://www.amazon.com/YoungRC-8520-Coreless-Propeller-Quadcopter/dp/B0BV6P4XYX)        | 4        | $11.99      | 20g                 |
+| FPV Camera + Transmitter      | [Amazon](https://www.amazon.com/Wolfwhoop-5-8GHz-Transmitter-Interface-Quadcopter/dp/B073J61SSQ) | 1        | $25.99      | 2.6g                |
+| Frame                         | -                                                                                                | 1        | -           | 5g                  |
+| **Total**                     | -                                                                                                | -        | **$85.73**  | 50.6g               |
 
 > The Amazon order total is above $35, so shipping is free.
 
@@ -21,7 +22,7 @@
 _Mass estimate is included in PCB mass estimate_
 
 | Item                                | Link                                                                                                                                                          | Quantity | Total Price             |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------- |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|-------------------------|
 | 64 MB NOR Flash: W25Q64JVSSIQ       | [LCSC](https://www.lcsc.com/product-detail/NOR-FLASH_Winbond-Elec-W25Q64JVSSIQ_C179171.html?s_z=n_W25Q16JV)                                                   | 1        | $0.88                   |
 | A03400A NMOS                        | [LCSC](https://lcsc.com/product-detail/MOSFETs_UMW-Youtai-Semiconductor-Co-Ltd-AO3400A_C347475.html)                                                          | 4        | $0.62 (for 20)          |
 | BMI270 IMU                          | [LCSC](https://www.lcsc.com/product-detail/Accelerometers_Bosch-Sensortec-BMI270_C2836813.html?s_z=n_BMI270)                                                  | 1        | $0.92 (other suppliers) |
@@ -40,28 +41,28 @@ _Mass estimate is included in PCB mass estimate_
 | 10k 125mW 0805 Resistor             | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J103TS_C2930231.html?s_z=n_100k)                                          | 9        | $0.11 (100 ct)          |
 | 220 125mW 0805 Resistor             | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J221-TS_C2933537.html?s_z=n_100k)                                         | 4        | $0.13 (100 ct)          |
 | 2.2k 125mW 0805 Resistor            | [LCSC](https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J222-TS_C2907303.html?s_z=n_100k)                                         | 2        | $0.13 (100 ct)          |
-| 1k 125mW 0805 Resistor | [LCSC](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J102-TS_C2907295.html?s_z=n_1k%2520resistor) | 1 | $0.13 (100 ct) |
+| 1k 125mW 0805 Resistor              | [LCSC](https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC0805J102-TS_C2907295.html?s_z=n_1k%2520resistor)                                  | 1        | $0.13 (100 ct)          |
 | SD Card Socket                      | [LCSC](https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_HOAUC-HYCW110-TF10-180B_C2962030.html)                                                   | 1        | $0.54 (10 ct)           |
-| DPDT Switch |                        [LCSC](https://lcsc.com/product-detail/Slide-Switches_XKB-Connection-SS-3235S-L1_C500055.html?s_z=n_dpdt) | 1 | $0.52 |
-| SPST Push Button |                   [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342A2P-WZ_C557591.html) | 3 | $0.37 (10 ct) |
-| 0805 Green LED | [LCSC](https://lcsc.com/product-detail/LED-Indication-Discrete_Yongyu-Photoelectric-SZYY0805G1_C19712537.html) | 1 | $0.27 (50 ct) |
-| WS2812B | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B-S_C22461793.html?s_z=n_ws2812b) | 3 | $0.53 (20 ct) |
-| BMP388 Barometer | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342A2P-WZ_C557591.html) | 1 | $1.25 |
-| SN74HC148 Priority Encoder | [LCSC](https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html) | 1 | $0.74 |
-| **Total** | - | - | **$16.66** |
+| DPDT Switch                         | [LCSC](https://lcsc.com/product-detail/Slide-Switches_XKB-Connection-SS-3235S-L1_C500055.html?s_z=n_dpdt)                                                     | 1        | $0.52                   |
+| SPST Push Button                    | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342A2P-WZ_C557591.html)                                                                    | 3        | $0.37 (10 ct)           |
+| 0805 Green LED                      | [LCSC](https://lcsc.com/product-detail/LED-Indication-Discrete_Yongyu-Photoelectric-SZYY0805G1_C19712537.html)                                                | 1        | $0.27 (50 ct)           |
+| WS2812B                             | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B-S_C22461793.html?s_z=n_ws2812b)                                     | 3        | $0.53 (20 ct)           |
+| BMP388 Barometer                    | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342A2P-WZ_C557591.html)                                                                    | 1        | $1.25                   |
+| SN74HC148 Priority Encoder          | [LCSC](https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html)                                        | 1        | $0.74                   |
+| **Total**                           | -                                                                                                                                                             | -        | **$16.66**              |
 
 > Overall Target weight: **50g**
 
 ## Components which we already have:
 
-| Item                    | Quantity |
-| ----------------------- | -------- |
+| Item                    | Quantity       |
+|-------------------------|----------------|
 | Pin headers/sockets     | 2x10, 2x8, 2x8 |
-| 2 pin JST-2.0 connector | 1 |
-| 1N5819 Schottky | 2 |
-| ESP32-C3 Super Mini | 1 |
-| Hall effect Joystick | 2 |
-| 12mm Push Button | 4 |
+| 2 pin JST-2.0 connector | 1              |
+| 1N5819 Schottky         | 2              |
+| ESP32-C3 Super Mini     | 1              |
+| Hall effect Joystick    | 2              |
+| 12mm Push Button        | 4              |
 
 
 <!--
