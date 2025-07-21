@@ -6363,6 +6363,28 @@
 			)
 		)
 	)
+	(global_label "OSD_VIN"
+		(shape input)
+		(at 41.91 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3d0511d3-54ee-4be0-98db-9554cc71c77c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.1233 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BOOT"
 		(shape input)
 		(at 152.4 114.3 0)
@@ -6530,6 +6552,28 @@
 		(uuid "58b06910-3033-4e66-81bb-aa31bafd058a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 32.9377 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OSD_VOUT"
+		(shape input)
+		(at 41.91 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "591c068b-dac7-4cfb-8ef1-5016af16c08a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.43 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
