@@ -9,9 +9,11 @@ module case_bottom(height=4) {
         
         translate([-21.06, -18.4, 0]) cylinder(r=1.1, h=height + 1, center=true);
         translate([-21.06, 19.74, 0]) cylinder(r=1.1, h=height + 1, center=true);
+        translate([8.44, -20.39, 0]) cylinder(r=1.1, h=height + 1, center=true);
         translate([-21.06, -18.4, -2.5/2]) cylinder(r=3, h=2.5, center=true);
         translate([-21.06, 19.74, -2.5/2]) cylinder(r=3, h=2.5, center=true);
-    
+        translate([8.44, -20.39, -2.5/2]) cylinder(r=3, h=2.5, center=true);
+
         translate([42, -42.5, 0]) cylinder(r=1.1, h=height + 1, center=true);
         translate([42, 42.5, 0]) cylinder(r=1.1, h=height + 1, center=true);
         translate([42, -42.5, -2.5/2]) cylinder(r=3, h=2.5, center=true);
