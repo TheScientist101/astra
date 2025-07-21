@@ -503,7 +503,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "controller.stl",
+      "step": "../cad/components/pcb.stl",
       "svg": "",
       "vrml": ""
     },
