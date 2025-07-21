@@ -8,7 +8,7 @@ created_at: "2025-05-23"
 ### Total hours:
 
 - TheScientist101: 29
-- grimsteel: 51
+- grimsteel: 54
 
 # May 23rd:
 
@@ -324,3 +324,23 @@ uint8_t scale_adc_value(int16_t value) {
   return result;
 }
 ```
+
+# July 20th
+
+**Hours spent:**
+
+grimsteel: 3
+
+I spent some time polishing up the overall project. I added a battery holder to the frame, and exported the production files for the CAD and PCB to the repo.
+
+![battery holder](assets/day-12-battery.png)
+
+I ended up switching out our battery for a lighter one, even though it has a lower capacity. Even though this will result in a reduced flight time, it should still be in the 3-4 minute range.
+
+I'm actually not 100% sure what battery connector this uses, so I asked in #electronics to see if anyone recognizes it. If all else fails, we can solder our own connector on fairly easily.
+
+I also added an FPV connector to the PCB, as this will be cheaper than making a DDG extension board. We should be able to directly plug in the FPV module we're buying into the PCB through this.
+
+![fpv](assets/day-12-fpv.png)
+
+Routing this was pretty hard, as space is scarce in the PCB, but I was able to do it pretty easily on In1.Cu after I moved the IMU to get some more space.
