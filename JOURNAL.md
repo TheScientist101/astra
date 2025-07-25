@@ -1,18 +1,18 @@
 ---
 title: "astra"
-author: "TheScientist101 and grimsteel"
+author: "Urjith Mishra (@TheScientist101) and Siddhant Kameswar (@grimsteel)"
 description: "Astra is an open source, low cost, extensible brushed drone."
 created_at: "2025-05-23"
 ---
 
 ### Total hours:
 
-- TheScientist101: 36
-- grimsteel: 55
+- Urjith Mishra: 36
+- Siddhant Kameswar: 55
 
 # May 23rd:
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 
 **Hours spent: 3 each (huddle)**
 
@@ -33,7 +33,7 @@ We decided on an initial BOM, which is included in our [Full planning document](
 
 # June 4th:
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 
 **Hours spent: 3.5 each (huddle)**
 
@@ -51,7 +51,7 @@ We are approaching our budget pretty quickly... We must keep in mind the cost of
 
 # June 10th
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 
 **Hours spent: 2.5 each (huddle)**
 
@@ -67,7 +67,7 @@ We finished up our component research. ([BOM](./BOM.md))
 
 # June 10th
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 
 **Hours spent: 2 each (huddle)**
 
@@ -80,7 +80,7 @@ We started the initial schematic design
 
 # June 11th
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 
 **Hours spent: 1 each (huddle)**
 
@@ -94,7 +94,7 @@ We continued the schematic design
 
 # June 12th
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 **Hours spent: 2 each (huddle)**
 
 We continued the schematic design
@@ -110,7 +110,7 @@ We continued the schematic design
 
 # June 13th-14th
 
-grimsteel
+Siddhant
 
 **Hours spent: 5**
 
@@ -147,7 +147,7 @@ I did end up altering some of the power circuitry again (ferrite bead between VD
 
 # June 20th
 
-TheScientist101 + grimsteel
+Urjith + Siddhant
 **Hours spent: 2 each (huddle)**
 
 Siddhant started routing the PCB. He finalized the placement of most of the components and started routing the power traces. To improve signal quality, we decided to use four layers instead of two, and we will need to move the components around and re-route the PCB.
@@ -162,7 +162,7 @@ We still need to add a HAT interface connector socket for extensibility and modu
 
 # June 21st-30th
 
-grimsteel
+Siddhant
 
 **Hours spent: 5**
 
@@ -188,9 +188,9 @@ The `In2.Cu` layer is _supposed_ to be for power, and this is where I'll probabl
 
 **Hours spent:**
 
-TheScientist101: 2.5 (huddle)
+Urjith: 2.5 (huddle)
 
-grimsteel: 2.5 (huddle) + 2
+Siddhant: 2.5 (huddle) + 2
 
 We decided to lock in and actually finish the PCB.
 
@@ -222,7 +222,7 @@ The power traces were all routed on the external layers with 2mm tracks to ensur
 
 **Hours spent:**
 
-grimsteel: 6
+Siddhant: 6
 
 We realized that our current FPV system would be really slow - the nrf wouldn be able to cut it.
 
@@ -252,9 +252,9 @@ I also started work on the firmware. We're going to be using betaflight. The con
 
 **Hours spent:**
 
-TheScientist101: 2.5 (huddle) + 7 on controller
+Urjith: 2.5 (huddle) + 7 on controller
 
-grimsteel: 2.5 (huddle) + 2 on controller + 3 on frame + 2 on firmware and pcb improvements
+Siddhant: 2.5 (huddle) + 2 on controller + 3 on frame + 2 on firmware and pcb improvements
 
 We designed the PCB for the controller. Apart from the devboard and NRF chip, it is a simple controller with two joysticks, 4 buttons, and three status leds. We initially wanted to use a Raspberry Pi Pico, but we decided to use an ESP32 C3 Supermini instead to save space on the PCB. Additionally, the ESP32 has built-in Wi-Fi which could allow us to pair a phone as an alternative controller.
 
@@ -275,7 +275,7 @@ He also finished the betaflight configuration, changed the IMU to use SPI, added
 
 **Hours spent:**
 
-TheScientist101: 1
+Urjith: 1
 
 I tested some if the pinout for some joysticks I have should work for the controller, and they should. It took a while since the pins of the joysticks weren't long enough for the jumper wires, and I had to hold them in place while testing. I used this simple micropython script on a pico to test.
 
@@ -295,7 +295,7 @@ while True:
 
 **Hours spent:**
 
-grimsteel: 5
+Siddhant: 5
 
 I wrote the firmware for the transmitter/controller. It uses `esp-idf`, and we're using the V202 protocol for transmission between the transmitter and the drone.
 
@@ -329,9 +329,9 @@ uint8_t scale_adc_value(int16_t value) {
 
 **Hours spent:**
 
-TheScientist101: 6
+Urjith: 6
 
-grimsteel: 3
+Siddhant: 3
 
 I spent some time polishing up the overall project. I added a battery holder to the frame, and exported the production files for the CAD and PCB to the repo.
 
@@ -369,8 +369,8 @@ Checking back in, I added an additional mounting hole so that the PCB is more se
 
 **Hours spent:**
 
-TheScientist101: 1
-grimsteel: 1
+Urjith: 1
+Siddhant: 1
 
 We're polishing up the project for submission.
 
