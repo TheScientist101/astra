@@ -29,9 +29,9 @@ _Mass estimate is included in PCB mass estimate_
 | 64 MB NOR Flash: W25Q64JVSSIQ       | [LCSC](https://www.lcsc.com/product-detail/NOR-FLASH_Winbond-Elec-W25Q64JVSSIQ_C179171.html?s_z=n_W25Q16JV)                                                   | 1        | $0.88                   |
 | A03400A NMOS                        | [LCSC](https://lcsc.com/product-detail/MOSFETs_UMW-Youtai-Semiconductor-Co-Ltd-AO3400A_C347475.html)                                                          | 4        | $0.62 (for 20)          |
 | BMI270 IMU                          | [LCSC](https://www.lcsc.com/product-detail/Accelerometers_Bosch-Sensortec-BMI270_C2836813.html?s_z=n_BMI270)                                                  | 1        | $0.92 (other suppliers) |
-| STM32H750XBH6                       | [LCSC](https://www.lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_STMicroelectronics-STM32H750XBH6_C405932.html?s_z=n_STM32H7)                          | 1        | $6.45                   |
+| STM32H750VBT6                       | [LCSC](https://lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_ST-STM32H750VBT6_C404010.html)                                                            | 2        | $11.27                  |
 | 25 MHz Crystal (optional, but good) | [LCSC](https://lcsc.com/product-detail/Crystals_Shenzhen-SCTF-Elec-SX3B25-000F1010F30_C2901684.html?s_z=n_25%2520MHz)                                         | 1        | $0.36 (5 ct)            |
-| TLV1117LV-3.3                       | [LCSC](https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_Texas-Instruments-TLV1117LV33DCYR_C15578.html?s_z=n_TLV1117) | 1        | $0.84 (for 5)           |
+| TLV1117LV-3.3                       | [LCSC](https://lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_JSMSEMI-TLV1117LV33DCYR_C48937499.html)                          | 1        | $0.54 (for 5)           |
 | FCM1608KF-601T05 Ferrite Beads      | [LCSC](https://www.lcsc.com/product-detail/Ferrite-Beads_TAI-TECH-FCM1608KF-601T05_C133937.html?s_z=n_ferrite%2520beads)                                      | 1        | $0.18 (50 ct)           |
 | 100nF 16V 0805 Capacitor            | [LCSC](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Venkel-C0805X7R160-104KNP_C3865954.html?s_z=n_100%2520nF)               | 16       | $0.35 (50 ct)           |
 | 1uF 16V 0805 Capacitor              | [LCSC](https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.html)                  | 2        | $0.21 (20 ct)           |
@@ -48,12 +48,12 @@ _Mass estimate is included in PCB mass estimate_
 | SPST Push Button                    | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS342A2P-WZ_C557591.html)                                                                    | 3        | $0.37 (10 ct)           |
 | 0805 Green LED                      | [LCSC](https://lcsc.com/product-detail/LED-Indication-Discrete_Yongyu-Photoelectric-SZYY0805G1_C19712537.html)                                                | 1        | $0.27 (50 ct)           |
 | WS2812B                             | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B-S_C22461793.html?s_z=n_ws2812b)                                     | 3        | $0.53 (20 ct)           |
-| BMP388 Barometer                    | [LCSC](https://lcsc.com/product-detail/Pressure-Sensors_Bosch-BMP388_C779278.html?s_z=n_BMP388)                                                               | 1        | $1.25                   |
+| BMP388 Barometer                    | [LCSC](https://lcsc.com/product-detail/Pressure-Sensors_Bosch-BMP388_C779278.html?s_z=n_BMP388)                                                               | 1        | $1.22                   |
 | SN74HC148 Priority Encoder          | [LCSC](https://lcsc.com/product-detail/Signal-Switches-Multiplexers-Decoders_lingxingic-SN74HC148DR-LX_C41413103.html)                                        | 1        | $0.74                   |
 | LCSC shipping | N/A | N/A | $9.30 |
-| **Total**                           | -                                                                                                                                                             | -        | **$26.45**              |
+| **Total**                           | -                                                                                                                                                             | -        | **$30.67**              |
 
-## Overall total cost: **$133.93**
+## Overall total cost: **$134.26**
 
 > Overall Target weight: **50g**
 
