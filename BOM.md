@@ -7,7 +7,7 @@
 | PCB                           |                                                                                                  | 1        | ~$25        | 10g                 |
 | NRF24L01 Breakout  (SMD24L01) | [AliExpress](https://www.aliexpress.us/item/3256805889378019.html)                               | 2        | $2.01       | 2g                  |
 | ADS1115 ADC                   | [AliExpress](https://www.aliexpress.us/item/2251832125341942.html) (ADS1115 Blue)                | 1        | $1.61       | - (controller)      |
-| SMD Solder Paste              | [AliExpress](https://www.aliexpress.us/item/3256807158914612.html)                               | 1        | $3.36       | - (negligible)      |
+| SMD Solder Paste              | [AliExpress](https://www.aliexpress.us/item/2251832821709616.html)                               | 1        | $3.36       | - (negligible)      |
 | 4 pin JST SH-1.0 Connector    | [AliExpress](https://www.aliexpress.us/item/3256805841019654.html)                               | 1        | $1.78       | - (negligible)      |
 | 2 pin JST MX-2.0 Connector    | [AliExpress](https://www.aliexpress.us/item/3256806058517035.html)                               | 1        | $3.30       | - (negliglible)     |
 | M2 Screws + Nuts              | [AliExpress](https://www.aliexpress.us/item/3256804647352410.html)                               | 6        | $5.26       | - (negliglible)     |
