@@ -5,18 +5,18 @@
 | Item                          | Link                                                                                             | Quantity | Total Price | Total Mass on Drone |
 |-------------------------------|--------------------------------------------------------------------------------------------------|----------|-------------|---------------------|
 | PCB                           |                                                                                                  | 1        | ~$25        | 10g                 |
-| NRF24L01 Breakout  (SMD24L01) | [AliExpress](https://www.aliexpress.us/item/3256805889378019.html)                               | 2        | $2.01       | 2g                  |
+| NRF24L01 Breakout  (SMD24L01) | [AliExpress](https://www.aliexpress.us/item/3256805889378019.html)                               | 2        | $4.83       | 2g                  |
 | ADS1115 ADC                   | [AliExpress](https://www.aliexpress.us/item/2251832125341942.html) (ADS1115 Blue)                | 1        | $1.61       | - (controller)      |
 | Solder Paste                  | [AliExpress](https://www.aliexpress.us/item/3256807783807660.html)                               | 1        | $4.74       | - (negligible)      |
 | 4 pin JST SH-1.0 Connector    | [AliExpress](https://www.aliexpress.us/item/3256805841019654.html)                               | 1        | $1.78       | - (negligible)      |
 | 2 pin JST MX-2.0 Connector    | [AliExpress](https://www.aliexpress.us/item/3256806058517035.html)                               | 1        | $3.30       | - (negliglible)     |
-| M2 Screws + Nuts (at least 6) | [AliExpress](https://www.aliexpress.us/item/3256808323261502.html)                               | 1        | $5.26       | - (negliglible)     |
+| M2 Screws + Nuts (at least 6) | [AliExpress](https://www.aliexpress.us/item/3256808323261502.html)                               | 1        | $4.37       | - (negliglible)     |
 | Li-Po Battery (380mAh, 25C)   | [Amazon](https://www.amazon.com/URGENEX-380mAh-Battery-Charger-Controller/dp/B08DD5MTKM)         | 1        | $13.99      | 11g                 |
 | YoungRC 8520 Coreless Motor   | [Amazon](https://www.amazon.com/YoungRC-8520-Coreless-Propeller-Quadcopter/dp/B0BV6P4XYX)        | 4        | $11.99      | 20g                 |
 | FPV Camera + Transmitter      | [Amazon](https://www.amazon.com/Wolfwhoop-5-8GHz-Transmitter-Interface-Quadcopter/dp/B073J61SSQ) | 1        | $25.99      | 2.6g                |
 | Frame                         | -                                                                                                | 1        | -           | 5g                  |
-| Estimated Tax | - | - | $7.89 | - |
-| **Total**                     | -                                                                                                | -        | **$103.56** | 50.6g               |
+| Estimated Tax | - | - | $8.07 | - |
+| **Total**                     | -                                                                                                | -        | **$105.67** | 50.6g               |
 
 > The Amazon order total is above $35, so shipping is free.
 
@@ -53,7 +53,7 @@ _Mass estimate is included in PCB mass estimate_
 | LCSC shipping | N/A | N/A | $9.30 |
 | **Total**                           | -                                                                                                                                                             | -        | **$30.67**              |
 
-## Overall total cost: **$134.26**
+## Overall total cost: **$136.34**
 
 > Overall Target weight: **50g**
 
