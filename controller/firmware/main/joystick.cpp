@@ -43,6 +43,8 @@ Joystick::Joystick(gpio_num_t i2c_sda, gpio_num_t i2c_scl, gpio_num_t alert_pin)
   // ADC has internal pullups
   adc_i2c.cfg.scl_pullup_en = false;
   adc_i2c.cfg.sda_pullup_en = false;
+  adc_i2c.timeout_ticks = 0;
+  adc_i2c.mutex = 0;
 
   // init i2c device
   ESP_ERROR_CHECK(ads111x_init_desc(&adc_i2c, ADS111X_ADDR_GND, I2C_NUM_0, i2c_sda, i2c_scl));

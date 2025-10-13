@@ -2,8 +2,10 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/timers.h>
 #include <driver/gpio.h>
+#include <esp_log.h>
 #include "led_strip.h"
 #include "led_strip_types.h"
+#include "i2cdev.h"
 #include "v202_protocol.hpp"
 #include "nrf24.hpp"
 #include "joystick.hpp"
@@ -64,7 +66,7 @@ static void IRAM_ATTR button_isr_handler(void* arg) {
   // set
   new_button_state |= (new_pin_state << bit);
 
-  if (new_button_state != button_state && new_button_state != 0) {
+  if (new_button_state != button_state) {
     button_press_handler(button_state = (button_state_t) new_button_state);
   }
 }
@@ -125,13 +127,16 @@ uint8_t map_v202_rotation(uint8_t joystick_value) {
 extern "C" void app_main(void)
 {
   // setup per-pin interrupts
-  gpio_install_isr_service(0);
+  ESP_ERROR_CHECK(gpio_install_isr_service(0));
 
   TaskHandle_t main_task = xTaskGetCurrentTaskHandle();
 
   led_strip_handle_t neopixel = init_neopixel();
   // LED 0 <- Red
-  led_strip_set_pixel(neopixel, 0, 255, 0, 0);
+  ESP_ERROR_CHECK(led_strip_set_pixel(neopixel, 0, 15, 0, 0));
+  ESP_ERROR_CHECK(led_strip_set_pixel(neopixel, 1, 0, 16, 0));
+  ESP_ERROR_CHECK(led_strip_set_pixel(neopixel, 2, 0, 0, 15));
+  led_strip_refresh(neopixel);
 
   init_buttons();
 
@@ -140,6 +145,10 @@ extern "C" void app_main(void)
   // pins configured in defconfig
   NRF24 nrf24;
   v202.init(&nrf24, TX, TAER);
+  uint8_t id[] = {0,0,0};
+  v202.setTXId(id);
+  
+  ESP_ERROR_CHECK(i2cdev_init());
 
   // initialize joystick ADC
   Joystick joystick(ADC_SDA, ADC_SCL, ADC_INT);
@@ -158,10 +167,14 @@ extern "C" void app_main(void)
     uint8_t pitch = map_v202_rotation(joystick.joy2_v);
     uint8_t roll = map_v202_rotation(joystick.joy2_h);
 
+    ESP_LOGI("HI", "%d %d %d %d %d", throttle, yaw, pitch, roll, button_state);
+
     // TODO: do something here
     uint8_t flags = 0;
     v202.command(throttle, yaw, pitch, roll, flags);
 
-    vTaskDelay(50 / portTICK_PERIOD_MS);
+    ESP_LOGI("HI", "send");
+
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
   }
 }

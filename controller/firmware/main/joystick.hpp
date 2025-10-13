@@ -7,7 +7,7 @@
 #include <ads111x.h>
 
 #define JOYSTICK_NUM_ADC_CHANNELS 4
-#define JOYSTICK_TASK_NOTIFY_INDEX 1
+#define JOYSTICK_TASK_NOTIFY_INDEX 0
 
 class Joystick {
 public:

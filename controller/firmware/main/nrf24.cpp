@@ -1,4 +1,7 @@
 #include "nrf24.hpp"
+#include "esp_err.h"
+#include "esp_log.h"
+#include "mirf.h"
 #include <freertos/timers.h>
 
 static uint8_t rxAddr[5] = { 0x88, 0x66, 0x86, 0x86, 0x86 };
@@ -13,9 +16,11 @@ NRF24::~NRF24() {
 }
 
 void NRF24::config_tx(uint8_t payload_size, uint8_t channel) {
+  ESP_LOGI("NRF24", "Configuring TX");
+  
   Nrf24_config(&dev, channel, payload_size);
 
-  Nrf24_config(&dev, EN_AA, 0); // disable auto acknowledgment
+  Nrf24_configRegister(&dev, EN_AA, 0); // disable auto acknowledgment
   Nrf24_configRegister(&dev, SETUP_RETR, 0xFF);
   Nrf24_setRetransmitCount(&dev, 15);
   Nrf24_setRetransmitDelay(&dev, 15); // 15 = 4000us
@@ -24,15 +29,17 @@ void NRF24::config_tx(uint8_t payload_size, uint8_t channel) {
 
   // config addresses
   Nrf24_setRADDR(&dev, rxAddr);
-  Nrf24_setTADDR(&dev, txAddr);
+  ESP_ERROR_CHECK(Nrf24_setTADDR(&dev, txAddr));
   Nrf24_addRADDR(&dev, 2, 0xC3);
   Nrf24_addRADDR(&dev, 3, 0xC4);
   Nrf24_addRADDR(&dev, 4, 0xC5);
   Nrf24_addRADDR(&dev, 5, 0xC6);
 
   vTaskDelay(50 / portTICK_PERIOD_MS);
-
-  Nrf24_powerUpTx(&dev);
+  
+  ESP_LOGI("NRF24", "Powered up");
+  
+  Nrf24_printDetails(&dev);
 }
 
 void NRF24::setFreq(uint8_t channel) {

@@ -5,6 +5,7 @@
 #include "v202_protocol.hpp"
 #include "freertos/timers.h"
 #include "esp_timer.h"
+#include "esp_log.h"
 
 V202::V202() {
   mTxid[0] = 0;
@@ -75,7 +76,9 @@ void V202::command(uint8_t throttle, int8_t yaw, int8_t pitch, int8_t roll,
   packet_sent = false;
   uint8_t rf_ch = mRfChannels[mRfChNum >> 1];
   mRfChNum = (mRfChNum + 1) & 0x1F;
+  ESP_LOGI("V202", "switching to %d %d", rf_ch, mRfChNum);
   mWireless->setFreq(rf_ch);
+  ESP_LOGI("v202", "writing command");
   mWireless->writePayload(mFrame);
   packet_sent = true;
   // delayMicroseconds(15);
