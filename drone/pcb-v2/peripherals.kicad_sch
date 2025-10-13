@@ -3415,7 +3415,7 @@
 	)
 	(rectangle
 		(start 19.05 69.85)
-		(end 64.77 93.98)
+		(end 40.64 93.98)
 		(stroke
 			(width 0)
 			(type default)
@@ -4175,7 +4175,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MOSI"
+	(global_label "SPI2_MOSI"
 		(shape input)
 		(at 33.02 31.75 180)
 		(fields_autoplaced yes)
@@ -4197,24 +4197,24 @@
 			)
 		)
 	)
-	(global_label "USB_DP"
+	(global_label "D-"
 		(shape input)
-		(at 95.25 39.37 180)
+		(at 107.95 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "26291d2a-46f9-441f-8498-a854855984ee")
+		(uuid "25f47ad1-cd83-4e4c-b3ad-911eaafb297c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.9472 39.37 0)
+			(at 113.7776 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4329,50 +4329,6 @@
 			)
 		)
 	)
-	(global_label "BTN2"
-		(shape input)
-		(at 54.61 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5acae715-9fb1-4d98-98d5-6ad80b3a8a9c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.3728 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TMS"
-		(shape input)
-		(at 107.95 36.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "646f3395-3911-4bf7-bfa5-4bfea5bbd567")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.5637 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "IMU_INT1"
 		(shape input)
 		(at 41.91 137.16 180)
@@ -4439,28 +4395,6 @@
 			)
 		)
 	)
-	(global_label "USB_DM"
-		(shape input)
-		(at 107.95 39.37 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7aec5ba6-81f4-4e6a-900a-59f7d51bf6b5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.4342 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MAGIC2"
 		(shape input)
 		(at 95.25 31.75 180)
@@ -4505,6 +4439,50 @@
 			)
 		)
 	)
+	(global_label "TCK"
+		(shape input)
+		(at 107.95 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "86611dd4-fa2f-4619-adf9-cc42a401d8c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.4428 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape input)
+		(at 95.25 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8ab0d015-1dc4-4022-9d98-d99ec69815fd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.4224 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "I2C1_SCL"
 		(shape input)
 		(at 107.95 29.21 0)
@@ -4527,7 +4505,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_CLK"
+	(global_label "SPI2_CLK"
 		(shape input)
 		(at 33.02 36.83 180)
 		(fields_autoplaced yes)
@@ -4549,7 +4527,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MISO"
+	(global_label "SPI2_MISO"
 		(shape input)
 		(at 33.02 34.29 180)
 		(fields_autoplaced yes)
@@ -4835,6 +4813,28 @@
 			)
 		)
 	)
+	(global_label "TMS"
+		(shape input)
+		(at 95.25 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f5b813dc-81a9-426c-b072-75f182e4e20b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.6363 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI1_MISO"
 		(shape input)
 		(at 41.91 129.54 180)
@@ -4857,7 +4857,7 @@
 			)
 		)
 	)
-	(global_label "SD_CS"
+	(global_label "SD_CD"
 		(shape input)
 		(at 256.54 44.45 0)
 		(fields_autoplaced yes)
@@ -4869,7 +4869,7 @@
 		)
 		(uuid "f82f085c-8aa5-473d-b557-992d7ae70268")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.4518 44.45 0)
+			(at 265.5123 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4897,28 +4897,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TCK"
-		(shape input)
-		(at 95.25 36.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fd6f6ca2-2545-40e5-a274-6ae6edccfa4d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.7572 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -7375,80 +7353,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 49.53 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99c68e0d-ae77-4a38-8e35-2e24551c264f")
-		(property "Reference" "SW2"
-			(at 49.53 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 49.53 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lcsc:SW-SMD_L4.0-W2.9-LS5.0"
-			(at 49.53 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 49.53 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5739f98c-27aa-402c-a87e-3a121c235912")
-		)
-		(pin "2"
-			(uuid "ae4a62a7-0e11-4863-b3d0-4b0617468294")
-		)
-		(instances
-			(project "astra"
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-			(project "astra"
-				(path "/e7184c3b-9f46-4a4e-9d8d-c6d386a497ae/2b0c3b06-bbfe-4747-abd1-836d8053a37d"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B")
 		(at 106.68 83.82 0)
 		(unit 1)
@@ -7895,78 +7799,6 @@
 			(project "astra"
 				(path "/e7184c3b-9f46-4a4e-9d8d-c6d386a497ae/2b0c3b06-bbfe-4747-abd1-836d8053a37d"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 44.45 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b904f668-a8f4-438b-9bc6-2c5a02ce6451")
-		(property "Reference" "#PWR024"
-			(at 44.45 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 44.45 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "97076fb9-c420-4e3d-ab3f-bb0b02495136")
-		)
-		(instances
-			(project ""
-				(path "/c0be3de2-9de4-4447-aa6f-537ea5f31aac/5121fc52-65c9-43af-86a0-4c1ef24f194e"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7184c3b-9f46-4a4e-9d8d-c6d386a497ae/2b0c3b06-bbfe-4747-abd1-836d8053a37d"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
