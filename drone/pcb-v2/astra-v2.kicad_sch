@@ -1,0 +1,140 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e7184c3b-9f46-4a4e-9d8d-c6d386a497ae")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 86.36 19.05)
+		(size 66.04 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2b0c3b06-bbfe-4747-abd1-836d8053a37d")
+		(property "Sheetname" "Peripherals"
+			(at 86.36 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 86.36 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "astra-v2"
+				(path "/e7184c3b-9f46-4a4e-9d8d-c6d386a497ae"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 19.05)
+		(size 67.31 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "418bc491-5de4-4ac8-8f4b-e13307d6b42a")
+		(property "Sheetname" "MCU"
+			(at 158.75 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 158.75 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "astra-v2"
+				(path "/e7184c3b-9f46-4a4e-9d8d-c6d386a497ae"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 19.05)
+		(size 62.23 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d7b896a-7c4f-48a4-8a5c-a2b8e1ad0253")
+		(property "Sheetname" "Motor Controller"
+			(at 17.78 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor-controller.kicad_sch"
+			(at 17.78 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "astra-v2"
+				(path "/e7184c3b-9f46-4a4e-9d8d-c6d386a497ae"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
