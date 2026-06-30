@@ -17,6 +17,7 @@ _Mass estimate is included in PCB mass estimate_
 | Item                          | Link                                                                                                                                            | Quantity | Total Price             | Already Have? |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|----------|-------------------------|---------------|
 | ESP32-S3-WROOM-1U-N4R2        | [LCSC](https://www.lcsc.com/product-detail/C3013942.html)                                                                                       | 1        | $4.42                   |               |
+| U.FL Wi-Fi Antenna            | [LCSC](https://www.lcsc.com/product-detail/C22467592.html)                                                                                      | 1        | $0.37                   |               |
 | 64 MB NOR Flash: W25Q64JVSSIQ | [LCSC](https://www.lcsc.com/product-detail/NOR-FLASH_Winbond-Elec-W25Q64JVSSIQ_C179171.html?s_z=n_W25Q16JV)                                     | 1        | $0.88                   | Yes           |
 | 32.768 kHz crystal (optional) | [LCSC](https://www.lcsc.com/product-detail/C32346.html)                                                                                         | 1        | $0.87 (5 ct)            |               |
 | TLV1117LV-3.3                 | [LCSC](https://lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_JSMSEMI-TLV1117LV33DCYR_C48937499.html)            | 1        | $0.54 (for 5)           | Yes           |
@@ -44,7 +45,7 @@ _Mass estimate is included in PCB mass estimate_
 | 24P FPC Connector 1mm         | [LCSC](https://www.lcsc.com/product-detail/C262726.html)                                                                                        | 2        | $0.80 (5 ct)            |               |
 | USB-C Receptacle 14 Pin THT   | [LCSC](https://www.lcsc.com/product-detail/C168704.html)                                                                                        | 1        | $0.41                   |               |
 |                               |                                                                                                                                                 |          |                         |               |
-| LCSC shipping                 | N/A                                                                                                                                             | N/A      | ?                       |               |
+| LCSC shipping                 | N/A                                                                                                                                             | N/A      | $9.45                   |               |
 | **Total**                     | -                                                                                                                                               | -        | ?                       |               |
 
 
